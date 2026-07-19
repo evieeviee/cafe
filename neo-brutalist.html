@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOCKS &amp; BEANS | Urban Bakery Cafe & Craft Roast Headquarters</title>
+    <meta name="description" content="Get heavy fuel at BLOCKS &amp; BEANS. Serving house-baked neon pastries, stone-ground loaded brunch loaves, and high-caffeine single origin extractions. Open late.">
+    
+    <!-- Heavy Bold Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- SEO Schema Injection -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "BLOCKS & BEANS Urban Cafe",
+      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800",
+      "priceRange": "$$",
+      "servesCuisine": "Artisanal Bakery, High-Yield Brunch",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "88 Industrial Block Sector",
+        "addressLocality": "Metropolitan East",
+        "addressCountry": "MY"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-color: #f3f3f3;
+            --brutal-black: #111111;
+            --neon-accent: #cfff00; /* Electrifying Lime Neon */
+            --white-surface: #ffffff;
+            --whatsapp-color: #25D366;
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--brutal-black);
+            font-family: 'Space Grotesk', sans-serif;
+            padding: 20px;
+        }
+
+        .master-wrapper {
+            max-width: 1300px;
+            margin: 0 auto;
+            border: 4px solid var(--brutal-black);
+            background-color: var(--white-surface);
+            box-shadow: 12px 12px 0px var(--brutal-black);
+        }
+
+        /* Brutalist Header Layout Block */
+        header {
+            border-bottom: 4px solid var(--brutal-black);
+            padding: 30px;
+            background: var(--neon-accent);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .brand-logo { font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 1.6rem; text-transform: uppercase; color: var(--brutal-black); text-decoration: none; }
+        .nav-links-brutal { display: flex; gap: 24px; list-style: none; }
+        .nav-links-brutal a { text-decoration: none; color: var(--brutal-black); font-weight: 700; text-transform: uppercase; border: 2px solid transparent; padding: 6px 12px; transition: 0.1s; }
+        .nav-links-brutal a:hover { background: var(--white-surface); border-color: var(--brutal-black); box-shadow: 3px 3px 0px var(--brutal-black); }
+
+        /* Brutalist Hero Layout Matrix */
+        .hero-block { display: grid; grid-template-columns: 1.1fr 0.9fr; border-bottom: 4px solid var(--brutal-black); }
+        .hero-left { padding: 60px 40px; border-right: 4px solid var(--brutal-black); display: flex; flex-direction: column; justify-content: center; }
+        .hero-left h1 { font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: clamp(2.2rem, 4vw, 4.5rem); line-height: 1; text-transform: uppercase; margin-bottom: 30px; }
+        .hero-left h1 span { background: var(--neon-accent); padding: 0 10px; display: inline-block; border: 3px solid var(--brutal-black); margin-top: 5px;}
+        .hero-left p { font-size: 1.2rem; font-weight: 500; line-height: 1.5; color: #333; margin-bottom: 40px; max-width: 580px; }
+        
+        /* Rigid Brutalist Buttons */
+        .brutal-btn { display: inline-block; padding: 20px 40px; font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 0.95rem; text-transform: uppercase; text-decoration: none; color: var(--brutal-black); border: 4px solid var(--brutal-black); background: var(--neon-accent); box-shadow: 6px 6px 0px var(--brutal-black); transition: 0.15s; text-align: center;}
+        .brutal-btn:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0px var(--brutal-black); }
+        .brutal-btn-alt { background: var(--white-surface); margin-left: 15px;}
+
+        .hero-right-img { width: 100%; height: 100%; object-fit: cover; min-height: 450px; background-color: var(--neon-accent); }
+
+        /* The Menu Block Board */
+        .board-section { padding: 80px 40px; border-bottom: 4px solid var(--brutal-black); }
+        .board-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 50px; }
+        .board-item { border: 4px solid var(--brutal-black); padding: 30px; box-shadow: 6px 6px 0px var(--brutal-black); background: var(--white-surface); position: relative;}
+        .board-tag { position: absolute; top: -15px; right: 20px; background: var(--neon-accent); border: 2px solid var(--brutal-black); font-size: 0.75rem; font-weight: 700; padding: 4px 10px; text-transform: uppercase;}
+        .board-item h3 { font-family: 'Unbounded', sans-serif; font-size: 1.3rem; margin-bottom: 12px; text-transform: uppercase; }
+        .board-item p { font-size: 1rem; color: #444; margin-bottom: 20px; }
+        .price-sticker { display: inline-block; padding: 6px 14px; background: var(--brutal-black); color: #fff; font-weight: 700; font-size: 1.1rem; }
+
+        /* Mega Thick Layout Booking System */
+        .booking-block-system { display: grid; grid-template-columns: 1fr 1fr; }
+        .booking-bl-left { padding: 60px 40px; border-right: 4px solid var(--brutal-black); background: var(--brutal-black); color: var(--white-surface); display: flex; flex-direction: column; justify-content: center;}
+        .booking-bl-left h2 { font-family: 'Unbounded', sans-serif; font-size: 2.8rem; text-transform: uppercase; margin-bottom: 20px; color: var(--neon-accent); }
+        .booking-bl-right { padding: 60px 40px; background: var(--white-surface); }
+        
+        .brutal-input-container { margin-bottom: 30px; }
+        .brutal-input-container label { display: block; font-family: 'Unbounded', sans-serif; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 10px; }
+        .brutal-field { width: 100%; border: 4px solid var(--brutal-black); padding: 16px; font-family: inherit; font-size: 1.1rem; font-weight: 700; color: var(--brutal-black); outline: none; background: var(--bg-color); box-shadow: 4px 4px 0px rgba(0,0,0,0.1); }
+        .brutal-field:focus { background: var(--white-surface); box-shadow: 6px 6px 0px var(--brutal-black); }
+
+        .btn-heavy-wa { width: 100%; border: 4px solid var(--brutal-black); background: var(--whatsapp-color); color: #fff; padding: 20px; font-family: 'Unbounded', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 1rem; box-shadow: 6px 6px 0px var(--brutal-black); cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 12px; transition: 0.1s; }
+        .btn-heavy-wa:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0px var(--brutal-black); }
+
+        footer { padding: 40px; background: var(--brutal-black); color: #fff; text-align: center; font-size: 0.9rem; font-weight: 500; }
+
+        @media(max-width: 992px) {
+            .hero-block, .booking-block-system { grid-template-columns: 1fr; }
+            .hero-left { border-right: none; border-bottom: 4px solid var(--brutal-black); padding: 40px 20px; }
+            .booking-bl-left { border-right: none; border-bottom: 4px solid var(--brutal-black); padding: 40px 20px; }
+            .booking-bl-right { padding: 40px 20px; }
+            .nav-links-brutal { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="master-wrapper">
+        <!-- BRUTAL HEADER -->
+        <header>
+            <a href="#" class="brand-logo">B &amp; B</a>
+            <ul class="nav-links-brutal">
+                <li><a href="#about">Fuel</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#book">Book Out</a></li>
+            </ul>
+        </header>
+
+        <!-- BRUTAL HERO LAYOUT -->
+        <section class="hero-block" id="about">
+            <div class="hero-left">
+                <h1>Heavy Fuel. <span>Late Coffee.</span></h1>
+                <p>An industrial neighborhood hub serving stone-milled thick sourdough brunch stacks, high-yield loaded pastry packs, and razor-sharp house-roasted espresso variants.</p>
+                <div>
+                    <a href="#book" class="brutal-btn">Reserve Spot</a>
+                    <a href="#menu" class="brutal-btn brutal-btn-alt">The Menu</a>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Urban concrete industrial cafe environment inside BLOCKS & BEANS headquarters" class="hero-right-img">
+        </section>
+
+        <!-- HIGH CONTRAST BLOCK BOARD -->
+        <section class="board-section" id="menu">
+            <h2 class="brand-logo" style="font-size: 2.5rem;">The Daily Load</h2>
+            <p style="font-size: 1.1rem; margin-top: 10px; font-weight: 500;">No fluff. Pure structural baking engine nutrition packs.</p>
+            
+            <div class="board-grid">
+                <!-- Item 1 -->
+                <article class="board-item">
+                    <span class="board-tag">House Signature</span>
+                    <h3>Chunky Avo Sourdough Stacks</h3>
+                    <p>Heavy slice of thick rustic stone-baked bread loaded with hand-mashed avocado crust, soft organic yolk modules, and chili crunch oil.</p>
+                    <span class="price-sticker">$19.50</span>
+                </article>
+                <!-- Item 2 -->
+                <article class="board-item">
+                    <span class="board-tag">High Yield</span>
+                    <h3>The Neon Cardamom Knot</h3>
+                    <p>Crisp, heavy butter twisted pastry layered in high-grade freshly crushed green cardamom seeds and sticky glaze finish.</p>
+                    <span class="price-sticker">$8.00</span>
+                </article>
+                <!-- Item 3 -->
+                <article class="board-item">
+                    <span class="board-tag">Batch Run</span>
+                    <h3>Precision Double Flat White</h3>
+                    <p>Double shot extraction of our high-altitude single origin Ethiopian heirloom variety, textured with clean pasture milk.</p>
+                    <span class="price-sticker">$7.50</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- RESERVATION INTERACTIVE CORE ENGINE -->
+        <section class="booking-block-system" id="book">
+            <div class="booking-bl-left">
+                <h2>Grab a Bench.</h2>
+                <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.9;">Benches load fast during active brunch intervals. Enter your operational specs here. The form instantly maps down to our central kitchen routing computer directly over WhatsApp.</p>
+                <div style="margin-top: 40px; font-weight: 700; line-height: 1.8;">
+                    <p><i class="fas fa-map" style="color: var(--neon-accent); margin-right: 12px;"></i> Sector 88 Industrial Crossings</p>
+                    <p><i class="fas fa-bolt" style="color: var(--neon-accent); margin-right: 12px;"></i> Open Daily | 07:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="booking-bl-right">
+                <form id="brutalEngine">
+                    <div class="brutal-input-container">
+                        <label for="bName">Customer Identity</label>
+                        <input type="text" id="bName" class="brutal-field" placeholder="e.g. Marcus Vane" required>
+                    </div>
+                    <div class="brutal-input-container">
+                        <label for="bLoad">Select Fuel Load Configuration</label>
+                        <select id="bLoad" class="brutal-field" required>
+                            <option value="Brunch Bench (2-4 Pax)">Brunch Bench (2-4 Pax)</option>
+                            <option value="Mega Batch Board Booking (6+ Pax)">Mega Batch Board Booking (6+ Pax)</option>
+                            <option value="Quick Pick-Up Pack Extraction">Quick Pick-Up Pack Extraction</option>
+                        </select>
+                    </div>
+                    <div class="brutal-input-container">
+                        <label for="bArrival">Arrival Matrix Timeline</label>
+                        <input type="datetime-local" id="bArrival" class="brutal-field" required>
+                    </div>
+                    <button type="submit" class="btn-heavy-wa"><i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Fire to WhatsApp Counter</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- BRUTAL FOOTER -->
+        <footer>
+            <p>&copy; 2026 BLOCKS &amp; BEANS Urban Roasters. Built with heavy structural SEO systems. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('brutalEngine').addEventListener('submit', function(e){
+            e.preventDefault();
+            const waTargetLine = "60123456789"; // Swap with actual endpoint number string
+            const client = document.getElementById('bName').value;
+            const configuration = document.getElementById('bLoad').value;
+            const timeline = document.getElementById('bArrival').value;
+            
+            const cleanDateString = new Date(timeline).toLocaleString();
+            
+            const computedText = `*NEW FUEL RESERVATION INBOUND - BLOCKS %26 BEANS*%0A%0A` +
+                                 `*Client identity:* ${encodeURIComponent(client)}%0A` +
+                                 `*Configuration:* ${encodeURIComponent(configuration)}%0A` +
+                                 `*Timeline Plot:* ${encodeURIComponent(cleanDateString)}`;
+                                 
+            window.open(`https://wa.me/${waTargetLine}?text=${computedText}`, '_blank');
+        });
+    </script>
+</body>
+</html>
