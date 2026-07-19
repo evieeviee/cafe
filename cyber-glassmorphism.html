@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N E O X I D E // Cyber-Organic Mixology & Sub-Zero Gastronomy</title>
+    <meta name="description" content="Enter NEOXIDE. A futuristic culinary engine utilizing sub-zero flash freezing, molecular mixology extractions, and bioluminescent ambient design grids.">
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema Mapping for Local Business Visibility -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarOrPub",
+      "name": "NEOXIDE Lounge",
+      "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=1200",
+      "priceRange": "$$$$",
+      "servesCuisine": "Molecular Gastronomy, Craft Cocktail Alchemy",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Grid Sector 7, Cyber Tunnel Lane",
+        "addressLocality": "Kuala Lumpur",
+        "addressCountry": "MY"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-dark: #050609;
+            --glass-bg: rgba(13, 16, 27, 0.45);
+            --glass-border: rgba(99, 102, 241, 0.15);
+            --neon-cyan: #00f2fe;
+            --neon-purple: #7f00ff;
+            --neon-indigo: #6366f1;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --wa-green: #25D366;
+            --font-display: 'Orbitron', sans-serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 242, 254, 0.06) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        /* Ambient Glow Nodes behind the interface layout */
+        .ambient-orb-1 { position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(127,0,255,0.12) 0%, transparent 70%); top: -100px; right: -100px; pointer-events: none; z-index: 0; }
+        .ambient-orb-2 { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,242,254,0.08) 0%, transparent 70%); top: 600px; left: -200px; pointer-events: none; z-index: 0; }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 30px; position: relative; z-index: 10; }
+
+        /* Advanced Blurred Navbar Module */
+        header {
+            position: sticky; top: 20px; z-index: 1000;
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 20px 40px;
+            margin-top: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .brand-logo { font-family: var(--font-display); font-weight: 900; font-size: 1.6rem; background: linear-gradient(45deg, #fff, var(--neon-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; letter-spacing: 4px; }
+        .nav-links { display: flex; gap: 30px; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; transition: all 0.3s; }
+        .nav-links a:hover { color: var(--neon-cyan); text-shadow: 0 0 10px rgba(0,242,254,0.6); }
+
+        /* Kinetic Status Indicator Badge */
+        .status-beacon { display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); padding: 6px 14px; border-radius: 30px; font-size: 0.75rem; font-family: var(--font-display); text-transform: uppercase; color: var(--neon-cyan); letter-spacing: 1px; }
+        .beacon-dot { width: 8px; height: 8px; background: var(--neon-cyan); border-radius: 50%; box-shadow: 0 0 10px var(--neon-cyan); animation: pulse 2s infinite ease-in-out; }
+        @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+        /* Graphic Cyber Hero Showcase Block */
+        .hero-layout { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; padding: 100px 0; align-items: center; }
+        .hero-left h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem, 5vw, 5.5rem); line-height: 1.05; letter-spacing: -2px; margin: 25px 0; text-transform: uppercase; }
+        .hero-left h1 span { display: block; background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-left p { font-size: 1.15rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 45px; max-width: 600px; }
+        
+        /* Glassmorphism Interactive Cards */
+        .cyber-card { background: var(--glass-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--glass-border); border-radius: 24px; padding: 40px; box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3); position: relative; overflow: hidden; }
+        .cyber-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(230deg, transparent, rgba(99, 102, 241, 0.05)); pointer-events: none; }
+
+        /* Premium Graphic Visual Frame with Complex Gradients */
+        .graphic-frame-wrapper { position: relative; display: flex; justify-content: center; }
+        .graphic-frame-wrapper::after { content: ''; position: absolute; width: 100%; height: 100%; border: 2px solid var(--neon-cyan); opacity: 0.3; top: 20px; left: 20px; border-radius: 32px; z-index: 1; pointer-events: none; }
+        .main-display-image { width: 100%; height: 550px; object-fit: cover; border-radius: 32px; border: 1px solid rgba(255,255,255,0.1); position: relative; z-index: 2; filter: saturate(1.2) brightness(0.85) contrast(1.05); }
+
+        /* Dynamic Digital Alchemical Menu Board */
+        .matrix-section { padding: 60px 0 120px 0; }
+        .section-tag { font-family: var(--font-display); text-transform: uppercase; color: var(--neon-indigo); letter-spacing: 4px; font-size: 0.9rem; margin-bottom: 15px; display: block; }
+        .section-title { font-family: var(--font-display); font-weight: 900; font-size: 2.8rem; margin-bottom: 60px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .grid-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; }
+        .menu-cyber-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 25px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .menu-cyber-row:hover { background: rgba(99, 102, 241, 0.08); border-color: rgba(99, 102, 241, 0.4); transform: translateY(-4px); }
+        .menu-meta h4 { font-family: var(--font-display); font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; color: #fff; }
+        .menu-meta p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; max-width: 320px; }
+        .menu-price { font-family: var(--font-display); font-size: 1.3rem; color: var(--neon-cyan); font-weight: 700; text-shadow: 0 0 10px rgba(0,242,254,0.3); }
+
+        /* Embedded Computation Booking System Engine */
+        .system-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; }
+        .input-group-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        
+        .neon-input-wrap { margin-bottom: 25px; }
+        .neon-input-wrap label { display: block; font-family: var(--font-display); font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; letter-spacing: 1px; }
+        .neon-input, .neon-select { width: 100%; background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); border-radius: 12px; padding: 16px 20px; font-family: inherit; color: #fff; font-size: 1rem; outline: none; transition: all 0.3s; }
+        .neon-input:focus, .neon-select:focus { border-color: var(--neon-cyan); box-shadow: 0 0 15px rgba(0, 242, 254, 0.25); background: rgba(0,0,0,0.6); }
+        
+        /* Real-Time Matrix Computation Summary Block */
+        .computation-panel { background: rgba(5, 6, 9, 0.6); border: 1px dashed var(--glass-border); border-radius: 16px; padding: 25px; margin-bottom: 30px; }
+        .comp-row { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 0.95rem; }
+        .comp-row:last-child { margin-bottom: 0; padding-top: 15px; border-top: 1px dashed var(--glass-border); font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--neon-cyan); }
+        
+        .action-button-cyber { width: 100%; background: linear-gradient(90deg, var(--neon-indigo), var(--neon-purple)); color: #fff; border: none; padding: 20px; border-radius: 14px; font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 12px; transition: all 0.3s; box-shadow: 0 10px 30px rgba(127, 0, 255, 0.3); }
+        .action-button-cyber:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(127, 0, 255, 0.5); filter: brightness(1.15); }
+
+        footer { margin-top: 100px; padding: 40px 0; border-top: 1px solid var(--glass-border); text-align: center; color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px; }
+
+        @media(max-width: 992px) {
+            .hero-layout, .system-grid, .input-group-row { grid-template-columns: 1fr; }
+            .nav-links, .status-beacon { display: none; }
+            .grid-matrix { grid-template-columns: 1fr; }
+            .main-display-image { height: 380px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ambient-orb-1"></div>
+    <div class="ambient-orb-2"></div>
+
+    <div class="container">
+        <!-- FROSTED NAVIGATION LAYER -->
+        <header>
+            <div class="nav-container">
+                <a href="#" class="brand-logo">NEOXIDE</a>
+                <ul class="nav-links">
+                    <li><a href="#about">System</a></li>
+                    <li><a href="#menu">Menu Matrix</a></li>
+                    <li><a href="#reserve">Interface Block</a></li>
+                </ul>
+                <div class="status-beacon">
+                    <span class="beacon-dot"></span> Network Live
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- CYBER GLOW HERO DISPLAY -->
+            <section class="hero-layout" id="about">
+                <div class="hero-left">
+                    <span class="status-beacon" style="background: rgba(99,102,241,0.1); border-color: rgba(99,102,241,0.3); color: var(--neon-indigo);">Operational Phase V</span>
+                    <h1>Sub-Zero Senses. <span>Alchemical Plating.</span></h1>
+                    <p>A multi-sensory environment processing progressive texture extraction, cryo-frozen elements, and high-frequency light pairings. We calibrate molecular cocktails and extreme culinary profiles dynamically across computational taste paths.</p>
+                    <a href="#reserve" class="action-button-cyber" style="max-width: 280px; text-decoration: none;">Initialize Interface</a>
+                </div>
+                <div class="graphic-frame-wrapper">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=800" alt="High-tech glowing cocktail glass environment at NEOXIDE" class="main-display-image">
+                </div>
+            </section>
+
+            <!-- DYNAMIC MOLECULAR MENU MATRIX -->
+            <section class="matrix-section" id="menu">
+                <span class="section-tag">// Extraction Profiles</span>
+                <h2 class="section-title">The Current Database</h2>
+                
+                <div class="grid-matrix">
+                    <div class="menu-cyber-row">
+                        <div class="menu-meta">
+                            <h4>Hyperbaric Sea Trout</h4>
+                            <p>Compressed ocean cuts, oxygenated lime kelp spheres, sub-zero vaporized dill micro oil fields.</p>
+                        </div>
+                        <span class="menu-price">$48.00</span>
+                    </div>
+                    <div class="menu-cyber-row">
+                        <div class="menu-meta">
+                            <h4>Cryo-Smoked Ribeye Cut</h4>
+                            <p>Precision heat-seared protein cube injected with charcoal-wood smoke essence essence matrices.</p>
+                        </div>
+                        <span class="menu-price">$72.00</span>
+                    </div>
+                    <div class="menu-cyber-row">
+                        <div class="menu-meta">
+                            <h4>Centrifugal Jasmine Alchemist</h4>
+                            <p>Clarified botanical white rum run through molecular spinning filters, carbonated lavender mist finish.</p>
+                        </div>
+                        <span class="menu-price">$24.00</span>
+                    </div>
+                    <div class="menu-cyber-row">
+                        <div class="menu-meta">
+                            <h4>Liquid Nitrogen Pavlova</h4>
+                            <p>Ultra-frozen crisp meringue casing, melting core of hot slow-reduced black currant coulis matrix.</p>
+                        </div>
+                        <span class="menu-price">$19.00</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COMPUTATION ENGINE & FORM MATRIX -->
+            <section class="matrix-section" id="reserve" style="padding-top: 0;">
+                <span class="section-tag">// Execution Terminal</span>
+                <h2 class="section-title">Configure Secure Block Allocation</h2>
+
+                <div class="cyber-card system-grid">
+                    <div>
+                        <form id="cyberEngineForm">
+                            <div class="neon-input-wrap">
+                                <label for="cUser">User Sequence Identity Identity</label>
+                                <input type="text" id="cUser" class="neon-input" placeholder="Enter Full Name" required>
+                            </div>
+                            
+                            <div class="input-group-row">
+                                <div class="neon-input-wrap">
+                                    <label for="cPackage">Gastronomy Tier</label>
+                                    <select id="cPackage" class="neon-select" required>
+                                        <option value="48">Trout Standard Track ($48/pax)</option>
+                                        <option value="72">Ribeye Premium Sequence ($72/pax)</option>
+                                        <option value="24">Alchemist Cocktail Experience ($24/pax)</option>
+                                    </select>
+                                </div>
+                                <div class="neon-input-wrap">
+                                    <label for="cSize">Node Count (Pax Size)</label>
+                                    <select id="cSize" class="neon-select" required>
+                                        <option value="1">1 Operator Node</option>
+                                        <option value="2" selected>2 Operator Nodes</option>
+                                        <option value="4">4 Operator Nodes</option>
+                                        <option value="6">6 Massive Cluster Nodes</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="neon-input-wrap">
+                                <label for="cTime">Matrix Timeline Window</label>
+                                <input type="datetime-local" id="cTime" class="neon-input" required>
+                            </div>
+
+                            <button type="submit" class="action-button-cyber" style="background: linear-gradient(90deg, #25D366, #128C7E); box-shadow: 0 10px 30px rgba(37,211,102,0.2);"><i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Relay Allocation Matrix</button>
+                        </form>
+                    </div>
+
+                    <!-- REALTIME JS GRAPHIC LEDGER PANELS -->
+                    <div style="display: flex; flex-direction: column; justify-content: center;">
+                        <div class="computation-panel">
+                            <h3 font-family="var(--font-display)" style="font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; color: #fff;"><i class="fas fa-microchip" style="color: var(--neon-cyan); margin-right: 10px;"></i> Ledger Matrix Calculations</h3>
+                            
+                            <div class="comp-row">
+                                <span>Selected Sequence Base Price:</span>
+                                <span id="calcBase">$48.00</span>
+                            </div>
+                            <div class="comp-row">
+                                <span>Multiplication Nodes (Pax):</span>
+                                <span id="calcNodes">x2</span>
+                            </div>
+                            <div class="comp-row">
+                                <span>System Processing Service (10%):</span>
+                                <span id="calcTax">$9.60</span>
+                            </div>
+                            <div class="comp-row">
+                                <span>Total Estimated Matrix Cost:</span>
+                                <span id="calcTotal">$105.60</span>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; text-align: justify;"><i class="fas fa-shield-alt" style="color: var(--neon-purple); margin-right: 8px;"></i> Security Protocol Notice: Submitting configurations pipes data arrays cleanly into custom text strings and transfers tracking down to our central reservation queue over WhatsApp API nodes instantly.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 NEOXIDE Matrix System Laboratories. Fully optimized structure using layered web vectors. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- ADVANCED JS SYSTEM COMPUTATION LABELS -->
+    <script>
+        const packageSelector = document.getElementById('cPackage');
+        const sizeSelector = document.getElementById('cSize');
+        
+        function runMatrixCalculations() {
+            const baseValue = parseFloat(packageSelector.value);
+            const paxCount = parseInt(sizeSelector.value);
+            
+            const subtotal = baseValue * paxCount;
+            const operationalTax = subtotal * 0.10;
+            const grossTotal = subtotal + operationalTax;
+            
+            document.getElementById('calcBase').innerText = `$${baseValue.toFixed(2)}`;
+            document.getElementById('calcNodes').innerText = `x${paxCount}`;
+            document.getElementById('calcTax').innerText = `$${operationalTax.toFixed(2)}`;
+            document.getElementById('calcTotal').innerText = `$${grossTotal.toFixed(2)}`;
+        }
+
+        packageSelector.addEventListener('change', runMatrixCalculations);
+        sizeSelector.addEventListener('change', runMatrixCalculations);
+        
+        // Initial setup sequence load
+        runMatrixCalculations();
+
+        // Advanced WhatsApp Engine Generation
+        document.getElementById('cyberEngineForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            const waTargetNode = "60123456789"; // Input main receiving line number here
+            const identityName = document.getElementById('cUser').value;
+            const selectedText = packageSelector.options[packageSelector.selectedIndex].text;
+            const nodeQuantity = sizeSelector.options[sizeSelector.selectedIndex].text;
+            const timelineStamp = document.getElementById('cTime').value;
+            
+            const prettifiedDate = new Date(timelineStamp).toLocaleString();
+            const computedFinalCost = document.getElementById('calcTotal').innerText;
+
+            const finalPayloadText = `*⚡ NEOXIDE SYSTEM CORE ALLOCATION REGISTRY*%0A%0A` +
+                                     `*Operator Identity:* ${encodeURIComponent(identityName)}%0A` +
+                                     `*Sequence Track:* ${encodeURIComponent(selectedText)}%0A` +
+                                     `*System Capacity Nodes:* ${encodeURIComponent(nodeQuantity)}%0A` +
+                                     `*Timeline Window:* ${encodeURIComponent(prettifiedDate)}%0A` +
+                                     `*Ledger Estimate Total:* ${encodeURIComponent(computedFinalCost)}`;
+                                     
+            window.open(`https://wa.me/${waTargetNode}?text=${finalPayloadText}`, '_blank');
+        });
+    </script>
+</body>
+</html>
