@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K O N L E K T | Avant-Garde Culinary & Specialty Espresso Lab</title>
+    <meta name="description" content="Experience architectural dining at KONLEKT. Merging technical seasonal gastronomy with hyper-limited micro-lot coffee extractions. Reserve your custom culinary sequence.">
+    
+    <!-- Advanced Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Syne:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Technical SEO Local Business Schema Mapping -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FineDiningRestaurant",
+      "name": "KONLEKT Lounge",
+      "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=1200",
+      "priceRange": "$$$$",
+      "servesCuisine": "Modern Gastronomy, Progressive Specialty Coffee",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 Architectural Corridor",
+        "addressLocality": "Downtown Hub",
+        "addressCountry": "MY"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --color-bg: #0b0c0e;
+            --color-surface: #121418;
+            --color-accent: #d1b894;
+            --color-text: #e2e4e9;
+            --color-muted: #707580;
+            --wa-brand: #25D366;
+            --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: 'Syne', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Architectural Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--color-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--color-accent); }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+
+        /* Floating Absolute UI Elements */
+        .decor-line { position: fixed; left: 60px; top: 0; width: 1px; height: 100vh; background: rgba(209, 184, 148, 0.08); z-index: 1; pointer-events: none; }
+        
+        /* Advanced Navigation Layer */
+        header { position: absolute; width: 100%; top: 0; left: 0; z-index: 100; padding: 40px 0; }
+        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+        .logo-text { font-family: 'Cinzel', serif; font-size: 1.8rem; font-weight: 600; letter-spacing: 6px; color: #fff; text-decoration: none; }
+        .menu-triggers { display: flex; gap: 40px; list-style: none; align-items: center; }
+        .menu-triggers a { text-decoration: none; color: var(--color-text); font-size: 0.8rem; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; transition: var(--transition-smooth); }
+        .menu-triggers a:hover { color: var(--color-accent); letter-spacing: 5px; }
+
+        /* Asymmetrical Split Hero Layout */
+        .hero-section { min-height: 100vh; display: flex; align-items: center; padding-top: 140px; position: relative; }
+        .hero-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; width: 100%; align-items: center; }
+        
+        .hero-context { position: relative; z-index: 5; }
+        .hero-tag { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 6px; color: var(--color-accent); display: block; margin-bottom: 20px; }
+        .hero-context h1 { font-family: 'Cinzel', serif; font-size: clamp(3rem, 5vw, 6rem); font-weight: 400; line-height: 0.95; color: #fff; margin-bottom: 30px; }
+        .hero-context h1 span { display: block; font-family: 'Syne', sans-serif; font-weight: 700; color: transparent; -webkit-text-stroke: 1px var(--color-accent); }
+        .hero-description { font-size: 1.05rem; color: var(--color-muted); font-weight: 400; line-height: 1.7; max-width: 520px; margin-bottom: 50px; }
+
+        /* Interactive Dynamic Buttons */
+        .interactive-cta { display: inline-flex; align-items: center; gap: 20px; text-decoration: none; color: #fff; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; letter-spacing: 3px; position: relative; padding: 10px 0; transition: var(--transition-smooth); }
+        .interactive-cta::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background: var(--color-accent); transition: var(--transition-smooth); }
+        .interactive-cta:hover { color: var(--color-accent); }
+        .interactive-cta:hover::after { width: 100%; }
+
+        /* Layered Asymmetric Depth Presentation */
+        .hero-visual-stack { position: relative; width: 100%; height: 650px; }
+        .main-frame { width: 85%; height: 90%; object-fit: cover; position: absolute; right: 0; top: 0; filter: contrast(1.1) brightness(0.9); border: 1px solid rgba(255,255,255,0.05); }
+        .offset-frame { width: 55%; height: 50%; object-fit: cover; position: absolute; left: 0; bottom: 0; border: 8px solid var(--color-bg); z-index: 2; box-shadow: 0 30px 60px rgba(0,0,0,0.4); }
+
+        /* Culinary Sequences Section (Advanced Structural List Grid) */
+        .sequence-section { padding: 16px 0 120px 0; position: relative; z-index: 5; }
+        .section-header-wrap { margin-bottom: 80px; }
+        .section-header-wrap h2 { font-family: 'Cinzel', serif; font-size: 3rem; font-weight: 400; margin-bottom: 15px; }
+        
+        .sequence-matrix { display: flex; flex-direction: column; }
+        .sequence-row { display: grid; grid-template-columns: 0.2fr 1fr 1.5fr 0.3fr; padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.08); align-items: center; transition: var(--transition-smooth); text-decoration: none; color: inherit;}
+        .sequence-row:last-child { border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .sequence-row:hover { background: rgba(255,255,255,0.02); padding-left: 20px; padding-right: 20px; color: var(--color-accent); }
+        .seq-num { font-size: 0.9rem; color: var(--color-accent); font-family: 'Cinzel', serif; }
+        .seq-title { font-size: 1.5rem; font-weight: 600; }
+        .seq-desc { color: var(--color-muted); font-size: 0.95rem; font-weight: 400; padding-right: 40px; }
+        .seq-price { font-family: 'Cinzel', serif; font-size: 1.4rem; text-align: right; }
+
+        /* Engineered WhatsApp Engine Interface */
+        .booking-core { padding: 120px 0; background: var(--color-surface); position: relative; border-top: 1px solid rgba(209, 184, 148, 0.15); }
+        .booking-split { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 80px; }
+        .booking-context h2 { font-family: 'Cinzel', serif; font-size: 3.5rem; line-height: 1.1; margin-bottom: 30px; }
+        
+        .luxury-form-field { margin-bottom: 35px; position: relative; }
+        .luxury-form-field input, .luxury-form-field select { width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--color-muted); padding: 15px 0; font-family: inherit; font-size: 1.1rem; color: #fff; outline: none; transition: var(--transition-smooth); }
+        .luxury-form-field input:focus, .luxury-form-field select:focus { border-bottom-color: var(--color-accent); }
+        .luxury-form-field label { position: absolute; top: -10px; left: 0; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--color-accent); pointer-events: none; }
+        
+        .wa-action-engine { width: 100%; background: #fff; color: var(--color-bg); border: none; padding: 22px; font-family: inherit; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 15px; transition: var(--transition-smooth); }
+        .wa-action-engine:hover { background: var(--color-accent); color: #fff; }
+
+        footer { background: #07080a; padding: 60px 0; border-top: 1px solid rgba(255,255,255,0.03); text-align: center; color: var(--color-muted); font-size: 0.85rem; letter-spacing: 1px; }
+
+        @media(max-width: 992px) {
+            .hero-layout, .booking-split, .sequence-row { grid-template-columns: 1fr; gap: 40px; }
+            .hero-visual-stack { height: 450px; }
+            .menu-triggers, .decor-line { display: none; }
+            .sequence-row { gap: 10px; padding: 25px 0; }
+            .seq-price { text-align: left; margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="decor-line"></div>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo-text">KONLEKT</a>
+            <ul class="menu-triggers">
+                <li><a href="#about">Concept</a></li>
+                <li><a href="#sequences">Sequences</a></li>
+                <li><a href="#reserve">Reservations</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- ASYMMETRICAL HERO CONCEPT -->
+        <section class="hero-section" id="about">
+            <div class="container hero-layout">
+                <div class="hero-context">
+                    <span class="hero-tag">Lab Concept & Lounge</span>
+                    <h1>Structural Taste. <span>Curated Flow.</span></h1>
+                    <p class="hero-description">An unapologetic alignment of hyper-clean spatial design and sensory processing. We operate on zero compromise—sourcing nano-lot botanicals, single-estate coffee extractions, and rare seasonal plating sequences.</p>
+                    <a href="#reserve" class="interactive-cta">Initiate Sequence</a>
+                </div>
+                <div class="hero-visual-stack">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=800" alt="Exquisite modernist minimal main plate course at KONLEKT Gastronomy Lounge" class="main-frame">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=80&w=600" alt="Artisan slow-bar pour over coffee extraction" class="offset-frame">
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO ADVANCED STRUCTURAL DATA LISTING -->
+        <section class="sequence-section" id="sequences">
+            <div class="container">
+                <div class="section-header-wrap">
+                    <h2>Current Taste Profiles</h2>
+                    <p style="color:var(--color-muted); max-width:500px;">Hyper-limited runs mapped dynamically by seasonal availability. Updated weekly.</p>
+                </div>
+
+                <div class="sequence-matrix">
+                    <div class="sequence-row">
+                        <span class="seq-num">01 //</span>
+                        <span class="seq-title">Slow-Roasted Dry Aged Duck</span>
+                        <span class="seq-desc">Fermented wild plum glaze, toasted rye dust infusion, compressed crisp fennel shards.</span>
+                        <span class="seq-price">$54</span>
+                    </div>
+                    <div class="sequence-row">
+                        <span class="seq-num">02 //</span>
+                        <span class="seq-title">Anaerobic Geisha Cultivar</span>
+                        <span class="seq-desc">Direct-trade double anaerobic fermentation profile featuring distinct notes of white peach and high jasmine.</span>
+                        <span class="seq-price">$18</span>
+                    </div>
+                    <div class="sequence-row">
+                        <span class="seq-num">03 //</span>
+                        <span class="seq-title">Crisp Nordic Halibut Fillet</span>
+                        <span class="seq-desc">Charred leek emulsion, wild sea lettuce oil extract, warm sunchoke reduction broth.</span>
+                        <span class="seq-price">$62</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HIGH TECH BOOKING INTEGRATION -->
+        <section class="booking-core" id="reserve">
+            <div class="container booking-split">
+                <div class="booking-context">
+                    <h2>Secure Allocation.</h2>
+                    <p style="color: var(--color-muted); line-height: 1.8; margin-bottom: 40px;">Due to the delicate nature of our extraction lab and curated small-batch sourcing pipeline, allocations are managed in real-time. Submitting this matrix requests a direct confirmation block on our master ledger via WhatsApp link protocols.</p>
+                    <p style="font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase;"><i class="fas fa-map-marker-alt" style="color: var(--color-accent); margin-right: 10px;"></i> 12 Architectural Corridor, Downtown Hub</p>
+                </div>
+                <div class="booking-engine-form">
+                    <form id="konlektEngine">
+                        <div class="luxury-form-field">
+                            <input type="text" id="kName" required placeholder=" ">
+                            <label for="kName">Lead Identity Name</label>
+                        </div>
+                        <div class="luxury-form-field">
+                            <select id="kAllocation" required>
+                                <option value="" disabled selected></option>
+                                <option value="Standard Tasting Track (2 Pax)">Standard Tasting Track (2 Pax)</option>
+                                <option value="Extended Gastronomy Sequence (4 Pax)">Extended Gastronomy Sequence (4 Pax)</option>
+                                <option value="Exclusive Slow Bar Immersion">Exclusive Slow Bar Immersion</option>
+                            </select>
+                            <label for="kAllocation">Desired Track / Tier</label>
+                        </div>
+                        <div class="luxury-form-field">
+                            <input type="datetime-local" id="kTarget" required>
+                            <label for="kTarget">Timeline Windows</label>
+                        </div>
+                        <button type="submit" class="wa-action-engine"><i class="fab fa-whatsapp" style="font-size: 1.2rem; color: var(--wa-brand);"></i> Route Allocation Code</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 KONLEKT Gastronomy. Technical Architectural SEO Infrastructure Setup. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('konlektEngine').addEventListener('submit', function(e){
+            e.preventDefault();
+            const destinationLine = "60123456789"; // Input configuration line here
+            const identity = document.getElementById('kName').value;
+            const tier = document.getElementById('kAllocation').value;
+            const targetTime = document.getElementById('kTarget').value;
+            
+            const prettifiedTime = new Date(targetTime).toLocaleString();
+            
+            const finalString = `*ALLOCATION TRANSACTION REQUEST - KONLEKT*%0A%0A` +
+                                `*Identity:* ${encodeURIComponent(identity)}%0A` +
+                                `*Track Selected:* ${encodeURIComponent(tier)}%0A` +
+                                `*Timeline Target:* ${encodeURIComponent(prettifiedTime)}`;
+                                
+            window.open(`https://wa.me/${destinationLine}?text=${finalString}`, '_blank');
+        });
+    </script>
+</body>
+</html>
