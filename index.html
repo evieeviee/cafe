@@ -821,6 +821,18 @@ footer{
 @media(max-width:600px){
   .design-grid{ grid-template-columns:1fr; }
 }
+
+/* TWO-PACKAGE COLLECTION OVERRIDES */
+.design-actions{grid-template-columns:1fr}
+.preview-toolbar{grid-template-columns:auto 1fr auto}
+.preview-info{text-align:center}
+@media(max-width:700px){
+  .preview-toolbar{grid-template-columns:1fr auto;gap:10px}
+  .preview-info{grid-column:1/-1;grid-row:1;text-align:left}
+  #closePreview{grid-column:1;grid-row:2}
+  #backToPlanniqueFromPreview{grid-column:2;grid-row:2}
+}
+
 </style>
 </head>
 
@@ -837,174 +849,49 @@ footer{
     </button>
 
     <nav class="nav-links" id="navLinks">
-      <button class="nav-link nav-route" data-route="home">Home</button>
-      <button class="nav-link nav-route" data-route="portfolio">Portfolio</button>
-      <button class="nav-link nav-route" data-route="starter">Starter</button>
-      <button class="nav-link nav-route" data-route="advance">Advance</button>
-      <button class="nav-link nav-route" data-route="packages">Packages</button>
-      <button class="nav-link nav-route" data-route="contact">Contact</button>
+      <button class="nav-link nav-route active" data-route="essential">Essential</button>
+      <button class="nav-link nav-route" data-route="signature">Signature</button>
     </nav>
 
-    <button class="nav-cta nav-route" data-route="contact">Get Started</button>
+    <button class="nav-cta" id="backToPlannique">← Back to Plannique</button>
     <button class="menu-btn" id="menuBtn">☰</button>
   </div>
 </header>
 
 <main>
 
-<!-- HOME PAGE -->
-<section class="page active" data-page="home">
-  <div class="home-hero">
-    <div class="wrap home-grid">
-      <div>
-        <div class="home-badge">✦ Premium Culinary Web Designs</div>
-        <h1>Elevate Your <span>Dining</span> Experience</h1>
-        <p>Showcase artisan menus, online reservations, ambiance galleries, and culinary concepts with bespoke designs engineered for hospitality businesses.</p>
-        
-        <div class="page-actions">
-          <button class="btn btn-primary nav-route" data-route="portfolio">Explore Portfolio</button>
-          <button class="btn btn-secondary nav-route" data-route="packages">View Pricing</button>
-        </div>
-
-        <div class="home-tags">
-          <span>Artisanal Coffee</span>
-          <span>Fine Dining</span>
-          <span>Modern Bistro</span>
-          <span>Online Reservations</span>
-        </div>
-      </div>
-
-      <div class="home-visual">
-        <div class="home-card-main">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85" alt="Restaurant Interior">
-          <div class="home-card-overlay">
-            <strong>Interactive Digital Menus</strong>
-            <p>Seamless mobile menu browsing, reservation integrations, and private event booking systems.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO PAGE -->
-<section class="page" data-page="portfolio">
+<section class="page active" data-page="essential">
   <div class="page-hero">
     <div class="wrap">
-      <div class="eyebrow">Design Collection</div>
-      <div class="title">Cafe & Restaurant Templates</div>
-      <p class="copy">Select any template below to test interactive live previews across desktop and mobile devices.</p>
+      <div class="eyebrow">Essential Package · RM499</div>
+      <div class="title">One-Page Cafe & Restaurant Themes</div>
+      <p class="copy">
+        Focused one-page website samples for cafés, bakeries, bistros and smaller restaurants.
+      </p>
     </div>
   </div>
 
   <div class="content-section">
     <div class="wrap">
-      <div class="portfolio-tools">
-        <div class="filter-tabs">
-          <button class="filter-btn active" data-filter="all">All Templates</button>
-          <button class="filter-btn" data-filter="starter">Starter</button>
-          <button class="filter-btn" data-filter="advance">Advance</button>
-        </div>
-
-        <div class="search-box">
-          <input id="portfolioSearch" type="search" placeholder="Search culinary concepts...">
-        </div>
-      </div>
-
-      <div id="starterSection">
-        <div class="collection-intro">
-          <h2>Starter Collection</h2>
-        </div>
-        <div class="design-grid" id="starterGrid"></div>
-      </div>
-
-      <div id="advanceSection">
-        <div class="collection-intro">
-          <h2>Advance & Specialty Collection</h2>
-        </div>
-        <div class="design-grid" id="advanceGrid"></div>
-      </div>
+      <div class="design-grid" id="essentialGrid"></div>
     </div>
   </div>
 </section>
 
-<!-- STARTER PAGE -->
-<section class="page" data-page="starter">
+<section class="page" data-page="signature">
   <div class="page-hero">
     <div class="wrap">
-      <div class="eyebrow">Starter Tier</div>
-      <div class="title">Starter Cafe & Bistro Designs</div>
-      <p class="copy">Elegant, fast-loading one-page layouts ideal for cafes, coffee shops, and local eateries.</p>
-    </div>
-  </div>
-  <div class="content-section">
-    <div class="wrap">
-      <div class="design-grid" id="starterPageGrid"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ADVANCE PAGE -->
-<section class="page" data-page="advance">
-  <div class="page-hero">
-    <div class="wrap">
-      <div class="eyebrow">Advance & Specialty Tier</div>
-      <div class="title">Advance, Cyber & Luxury Concepts</div>
-      <p class="copy">Feature-rich multi-page experiences, glassmorphism layouts, editorial food portfolios, and fine dining designs.</p>
-    </div>
-  </div>
-  <div class="content-section">
-    <div class="wrap">
-      <div class="design-grid" id="advancePageGrid"></div>
-    </div>
-  </div>
-</section>
-
-<!-- PACKAGES PAGE -->
-<section class="page" data-page="packages">
-  <div class="page-hero">
-    <div class="wrap">
-      <div class="eyebrow">Pricing Plans</div>
-      <div class="title">Hospitality Website Packages</div>
+      <div class="eyebrow">Signature Package · RM1,299</div>
+      <div class="title">Premium Multi-Page Dining Themes</div>
+      <p class="copy">
+        Advanced website samples with up to seven page views for premium restaurants and established dining brands.
+      </p>
     </div>
   </div>
 
   <div class="content-section">
-    <div class="wrap package-grid">
-      <div class="package-card">
-        <h2>Starter Cafe</h2>
-        <div class="package-price"><small>RM</small>499</div>
-        <p style="color:var(--muted);margin-top:10px;">Ideal for artisan coffee shops, bakeries, and quick-service diners.</p>
-        <div class="package-features">
-          <div class="package-feature">Single-page responsive design</div>
-          <div class="package-feature">Digital food & beverage menu section</div>
-          <div class="package-feature">Location, Google Map & Opening hours</div>
-          <div class="package-feature">Direct WhatsApp ordering / inquiry link</div>
-        </div>
-      </div>
-
-      <div class="package-card featured">
-        <h2>Advance Dining</h2>
-        <div class="package-price"><small>RM</small>1,299</div>
-        <p style="color:var(--muted);margin-top:10px;">Tailored for fine dining establishments, multi-location bistros, and luxury venues.</p>
-        <div class="package-features">
-          <div class="package-feature">Multi-page structure (Story, Gallery, Menu, Contact)</div>
-          <div class="package-feature">Integrated Online Reservation system form</div>
-          <div class="package-feature">Interactive menu tabs & dietary filters</div>
-          <div class="package-feature">High-resolution food photo showcase</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT PAGE -->
-<section class="page" data-page="contact">
-  <div class="page-hero">
     <div class="wrap">
-      <div class="eyebrow">Get In Touch</div>
-      <div class="title">Start Your Restaurant Project</div>
-      <p class="copy">Ready to upgrade your dining venue's digital footprint? Reach out to get started.</p>
+      <div class="design-grid" id="signatureGrid"></div>
     </div>
   </div>
 </section>
@@ -1015,36 +902,34 @@ footer{
   <div class="wrap footer-grid">
     <div>
       <strong style="font-family:'Playfair Display';font-size:18px;color:#fff;">Cafe & Restaurant Collection</strong>
-      <p style="margin-top:10px;">Crafted digital experiences for coffee bars, bistros, and fine dining venues.</p>
+      <p style="margin-top:10px;">Essential and Signature website samples by Plannique Design Co.</p>
     </div>
     <div>
-      <h4 style="color:#fff;margin-bottom:10px;">Navigation</h4>
-      <p><a href="#/portfolio">Portfolio</a></p>
-      <p><a href="#/packages">Packages</a></p>
+      <h4 style="color:#fff;margin-bottom:10px;">Packages</h4>
+      <p><button class="nav-route" data-route="essential" style="border:0;background:none;color:inherit;">Essential · RM499</button></p>
+      <p><button class="nav-route" data-route="signature" style="border:0;background:none;color:inherit;">Signature · RM1,299</button></p>
     </div>
     <div>
-      <h4 style="color:#fff;margin-bottom:10px;">Contact</h4>
-      <p>WhatsApp: +60 18-907 9798</p>
+      <h4 style="color:#fff;margin-bottom:10px;">Return</h4>
+      <p><button id="footerBackToPlannique" style="border:0;background:none;color:inherit;">← Back to Plannique</button></p>
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <span>© 2026 Plannique Design Co. All rights reserved.</span>
+    <span>© 2026 Plannique Design Co.</span>
   </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/60189079798" target="_blank">💬 WhatsApp Inquiry</a>
+
 
 <!-- PREVIEW MODAL -->
 <div class="preview-modal" id="previewModal">
   <div class="preview-toolbar">
-    <button class="preview-back" id="closePreview">← Back</button>
+    <button class="preview-back" id="closePreview">← Back to Collection</button>
     <div class="preview-info">
       <strong id="previewThemeName">Theme Name</strong>
       <span id="previewThemeMeta">Package Code</span>
     </div>
-    <div class="preview-actions">
-      <a class="btn btn-primary" id="openFullDemo" href="#" target="_blank">Open Direct File ↗</a>
-    </div>
+    <button class="preview-back" id="backToPlanniqueFromPreview">← Back to Plannique</button>
   </div>
   <div class="preview-stage">
     <div class="preview-shell" id="previewShell">
@@ -1070,104 +955,104 @@ footer{
 
 const cafeDesigns = [
   {
-    package: "starter",
+    package: "essential",
     name: "Classic Espresso & Bistro",
     code: "CAF-STR-01",
     file: "starter.html",
     style: "Warm Cozy Classic",
     desc: "A warm, welcoming layout tailored for neighborhood coffee shops, bakeries, and brunch spots.",
     image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=85",
-    tags: ["Starter", "Coffee Shop", "Bistro"]
+    tags: ["Essential", "Coffee Shop", "Bistro"]
   },
   {
-    package: "starter",
+    package: "essential",
     name: "Modern Urban Cafe",
     code: "CAF-STR-02",
     file: "modern-cafe.html",
     style: "Minimalist Urban",
     desc: "Sleek, modern design for artisan specialty roasters with digital menu cards and takeaway options.",
     image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=85",
-    tags: ["Starter", "Specialty Coffee", "Urban"]
+    tags: ["Essential", "Specialty Coffee", "Urban"]
   },
   {
-    package: "starter",
+    package: "essential",
     name: "Premium Dining Room",
     code: "CAF-STR-PRM",
     file: "premium.html",
     style: "Elegant Dark Premium",
     desc: "Sophisticated dark theme tailored for boutique eateries, wine bars, and contemporary lounge dining.",
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=85",
-    tags: ["Starter", "Wine Bar", "Premium"]
+    tags: ["Essential", "Wine Bar", "Premium"]
   },
   {
-    package: "advance",
+    package: "signature",
     name: "Editorial Luxury Gastronomy",
     code: "CAF-ADV-EDT",
     file: "editorial-luxury.html",
     style: "High-Fashion Editorial",
     desc: "Magazine-style serif typography and full-screen culinary imagery for high-end dining experiences.",
     image: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=85",
-    tags: ["Advance", "Editorial", "Gastronomy"]
+    tags: ["Signature", "Editorial", "Gastronomy"]
   },
   {
-    package: "advance",
+    package: "signature",
     name: "Grand Luxury Dining",
     code: "CAF-ADV-LUX",
     file: "luxury-dining.html",
     style: "Opulent Gold Accent",
     desc: "Opulent layout featuring online table reservation forms, chef tasting menus, and private room bookings.",
     image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85",
-    tags: ["Advance", "Fine Dining", "Reservations"]
+    tags: ["Signature", "Fine Dining", "Reservations"]
   },
   {
-    package: "advance",
+    package: "signature",
     name: "Neo-Brutalist Eatery",
     code: "CAF-ADV-BRT",
     file: "neo-brutalist.html",
     style: "Trendy Neo-Brutalist",
     desc: "Bold high-contrast design with punchy typography made for trendy pop-up kitchens and burger bars.",
     image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=85",
-    tags: ["Advance", "Neo-Brutalist", "Pop-up Kitchen"]
+    tags: ["Signature", "Neo-Brutalist", "Pop-up Kitchen"]
   },
   {
-    package: "advance",
+    package: "signature",
     name: "Cyber Glassmorphism Lounge",
     code: "CAF-ADV-GLS",
     file: "cyber-glassmorphism.html",
     style: "Futuristic Glassmorphism",
     desc: "Translucent UI cards and glowing neon accents designed for futuristic cocktail bars and nightlife venues.",
     image: "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=800&q=85",
-    tags: ["Advance", "Cocktail Bar", "Glassmorphism"]
+    tags: ["Signature", "Cocktail Bar", "Glassmorphism"]
   },
   {
-    package: "advance",
+    package: "signature",
     name: "Artisan Culinary Concept",
     code: "CAF-ADV-01",
     file: "advance.html",
     style: "Multi-Page Artisan",
     desc: "Comprehensive multi-page structure with farm-to-table story, detailed menu breakdown, and event calendar.",
     image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=85",
-    tags: ["Advance", "Farm-to-Table", "Multi-Page"]
+    tags: ["Signature", "Farm-to-Table", "Multi-Page"]
   },
   {
-    package: "advance",
+    package: "signature",
     name: "Bistronomy Signature",
     code: "CAF-ADV-02",
     file: "advance1.html",
     style: "Contemporary Bistro",
     desc: "Sleek bistro design focusing on seasonal ingredient highlights and integrated chef bio showcase.",
     image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=85",
-    tags: ["Advance", "Bistro", "Seasonal Menu"]
+    tags: ["Signature", "Bistro", "Seasonal Menu"]
   },
   {
-    package: "advance",
+    package: "signature",
     name: "Haute Cuisine Showcase",
     code: "CAF-ADV-03",
     file: "advance2.html",
     style: "Michelin Style Fine Dining",
     desc: "Minimalist dark layout focusing on course pairings, sommelier recommendations, and VIP booking flow.",
     image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=85",
-    tags: ["Advance", "Michelin Style", "Sommelier"]
+    tags: ["Signature", "Michelin Style", "Sommelier"]
   }
 ];
 
@@ -1185,52 +1070,78 @@ function createCard(design){
         <div class="design-tags">
           ${design.tags.map(t=>`<span>${t}</span>`).join("")}
         </div>
-        <div class="design-actions">
-          <button class="design-btn" onclick="openPreview('${design.code}')">Preview</button>
-          <a class="design-btn primary" href="${design.file}" target="_blank">View File</a>
+        <div class="design-actions" style="grid-template-columns:1fr;">
+          <button class="design-btn primary" onclick="openPreview('${design.code}')">Open Full-Screen Preview</button>
         </div>
       </div>
     </div>
   `;
 }
 
-// Render Grids
-const starterItems = cafeDesigns.filter(d=>d.package==='starter');
-const advanceItems = cafeDesigns.filter(d=>d.package==='advance');
+// Render package grids
+const essentialItems = cafeDesigns.filter(d=>d.package==='essential');
+const signatureItems = cafeDesigns.filter(d=>d.package==='signature');
 
-document.getElementById('starterGrid').innerHTML = starterItems.map(createCard).join('');
-document.getElementById('advanceGrid').innerHTML = advanceItems.map(createCard).join('');
-document.getElementById('starterPageGrid').innerHTML = starterItems.map(createCard).join('');
-document.getElementById('advancePageGrid').innerHTML = advanceItems.map(createCard).join('');
+document.getElementById('essentialGrid').innerHTML = essentialItems.map(createCard).join('');
+document.getElementById('signatureGrid').innerHTML = signatureItems.map(createCard).join('');
 
-// Navigation Handling
+// Navigation
 const pages = document.querySelectorAll('.page');
+
 function showPage(route){
-  pages.forEach(p => p.classList.toggle('active', p.dataset.page === route));
+  pages.forEach(page => page.classList.toggle('active', page.dataset.page === route));
+  document.querySelectorAll('.nav-link').forEach(link=>{
+    link.classList.toggle('active',link.dataset.route===route);
+  });
   window.scrollTo(0,0);
 }
 
-document.querySelectorAll('.nav-route').forEach(btn => {
-  btn.addEventListener('click', () => showPage(btn.dataset.route));
+document.querySelectorAll('.nav-route').forEach(button => {
+  button.addEventListener('click', () => showPage(button.dataset.route));
 });
 
-// Modal Preview
+// Return to Plannique.
+const PLANNIQUE_URL = "https://evieeviee.github.io/PlanniqueDesignCo/";
+
+function backToPlannique(){
+  if(window.parent && window.parent !== window){
+    window.parent.postMessage({type:"plannique-close-collection"},"*");
+    return;
+  }
+  window.location.href = PLANNIQUE_URL;
+}
+
+document.getElementById('backToPlannique').addEventListener('click',backToPlannique);
+document.getElementById('footerBackToPlannique').addEventListener('click',backToPlannique);
+
+// Full-screen preview modal.
 const modal = document.getElementById('previewModal');
 const iframe = document.getElementById('previewFrame');
 
 function openPreview(code){
-  const item = cafeDesigns.find(d => d.code === code);
+  const item = cafeDesigns.find(design => design.code === code);
   if(!item) return;
+
   document.getElementById('previewThemeName').textContent = item.name;
-  document.getElementById('previewThemeMeta').textContent = `${item.code} · ${item.file}`;
-  document.getElementById('openFullDemo').href = item.file;
+  document.getElementById('previewThemeMeta').textContent =
+    `${item.package === 'essential' ? 'Essential' : 'Signature'} · ${item.code}`;
+
   iframe.src = item.file;
   modal.classList.add('open');
+  document.body.classList.add('modal-open');
 }
 
-document.getElementById('closePreview').addEventListener('click', () => {
+function closePreview(){
   modal.classList.remove('open');
   iframe.src = '';
+  document.body.classList.remove('modal-open');
+}
+
+document.getElementById('closePreview').addEventListener('click',closePreview);
+document.getElementById('backToPlanniqueFromPreview').addEventListener('click',backToPlannique);
+
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape') closePreview();
 });
 </script>
 
