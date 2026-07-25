@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<meta
+  name="description"
+  content="Explore high-converting website designs for cafes, artisanal coffee shops, fine dining, and modern restaurants."
+>
+
+<title>Cafe & Restaurant Website Collection | Plannique Design Co</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+>
+
+<style>
+:root{
+  --bg:#0f0d0e;
+  --bg-soft:#181517;
+  --panel:#211d20;
+  --panel-light:#2c272b;
+  --border:#3a3338;
+  --border-bright:#544a52;
+
+  --text:#f5ede8;
+  --muted:#a3969e;
+
+  --accent:#d4a373;
+  --accent-dark:#b38253;
+  --accent-glow:rgba(212,163,115,0.25);
+
+  --green:#25d366;
+
+  --shadow:0 20px 50px rgba(0,0,0,0.6);
+  --shadow-glow:0 0 30px rgba(212,163,115,0.15);
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  min-height:100vh;
+  font-family:"Plus Jakarta Sans",Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 80% 10%,rgba(212,163,115,0.08),transparent 40%),
+    radial-gradient(circle at 10% 80%,rgba(163,100,50,0.05),transparent 40%),
+    var(--bg);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+body.modal-open,
+body.menu-open{
+  overflow:hidden;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button,
+input,
+select,
+textarea{
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+.wrap{
+  width:min(1220px,calc(100% - 40px));
+  margin:auto;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:var(--accent);
+  font-family:"Plus Jakarta Sans",sans-serif;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.eyebrow:before{
+  content:"";
+  width:8px;
+  height:8px;
+  background:var(--accent);
+  border-radius:50%;
+}
+
+.title{
+  margin-top:10px;
+  font-family:"Playfair Display",serif;
+  font-size:clamp(32px,4vw,52px);
+  line-height:1.15;
+  letter-spacing:-0.5px;
+}
+
+.copy{
+  margin-top:14px;
+  max-width:720px;
+  color:var(--muted);
+  font-size:16px;
+}
+
+.btn{
+  min-height:48px;
+  padding:12px 26px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border:0;
+  border-radius:30px;
+  font-family:"Plus Jakarta Sans",sans-serif;
+  font-size:14px;
+  font-weight:600;
+  transition:.25s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-primary{
+  background:var(--accent);
+  color:#0f0d0e;
+  box-shadow:var(--shadow-glow);
+}
+
+.btn-primary:hover{
+  background:#e2b486;
+  box-shadow:0 0 40px rgba(212,163,115,0.4);
+}
+
+.btn-secondary{
+  background:var(--panel);
+  border:1px solid var(--border-bright);
+  color:var(--text);
+}
+
+.btn-secondary:hover{
+  background:var(--panel-light);
+  border-color:var(--accent);
+}
+
+/* NAVIGATION */
+
+.navbar{
+  position:fixed;
+  inset:0 0 auto;
+  z-index:1000;
+  background:rgba(15,13,14,0.92);
+  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(16px);
+}
+
+.nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  border:0;
+  background:none;
+  text-align:left;
+}
+
+.brand-mark{
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  background:var(--accent);
+  color:#0f0d0e;
+  border-radius:50%;
+  font-family:"Playfair Display",serif;
+  font-size:22px;
+  font-weight:700;
+}
+
+.brand-copy strong{
+  display:block;
+  font-family:"Playfair Display",serif;
+  font-size:18px;
+  letter-spacing:0.5px;
+}
+
+.brand-copy span{
+  display:block;
+  color:var(--accent);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.nav-link{
+  padding:8px 14px;
+  border:0;
+  border-radius:20px;
+  background:none;
+  color:var(--muted);
+  font-family:"Plus Jakarta Sans",sans-serif;
+  font-size:13px;
+  font-weight:600;
+  transition:.2s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+  color:var(--accent);
+  background:rgba(212,163,115,0.08);
+}
+
+.nav-cta{
+  padding:10px 20px;
+  border:1px solid var(--accent);
+  border-radius:30px;
+  background:transparent;
+  color:var(--accent);
+  font-family:"Plus Jakarta Sans",sans-serif;
+  font-size:13px;
+  font-weight:600;
+  transition:.2s;
+}
+
+.nav-cta:hover{
+  background:var(--accent);
+  color:#0f0d0e;
+}
+
+.menu-btn{
+  display:none;
+  width:40px;
+  height:40px;
+  border:1px solid var(--border);
+  border-radius:50%;
+  background:var(--panel);
+  color:var(--text);
+  font-size:18px;
+}
+
+/* PAGE SYSTEM */
+
+main{
+  padding-top:76px;
+}
+
+.page{
+  display:none;
+  min-height:calc(100vh - 76px);
+  animation:pageEnter .3s ease;
+}
+
+.page.active{
+  display:block;
+}
+
+@keyframes pageEnter{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+
+  to{
+    opacity:1;
+    transform:none;
+  }
+}
+
+.page-hero{
+  padding:70px 0 50px;
+  background:
+    linear-gradient(to bottom,rgba(24,21,23,0.8),var(--bg)),
+    radial-gradient(circle at 50% 0%,rgba(212,163,115,0.1),transparent 70%);
+  border-bottom:1px solid var(--border);
+}
+
+.page-actions{
+  margin-top:25px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.content-section{
+  padding:70px 0;
+}
+
+/* HOME HERO */
+
+.home-hero{
+  padding:90px 0;
+  position:relative;
+  overflow:hidden;
+}
+
+.home-grid{
+  display:grid;
+  grid-template-columns:1.05fr 0.95fr;
+  gap:50px;
+  align-items:center;
+}
+
+.home-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 16px;
+  border:1px solid var(--border-bright);
+  border-radius:99px;
+  background:var(--panel);
+  color:var(--accent);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:0.5px;
+}
+
+.home-hero h1{
+  margin-top:20px;
+  font-family:"Playfair Display",serif;
+  font-size:clamp(42px,5.5vw,72px);
+  line-height:1.1;
+  letter-spacing:-1px;
+}
+
+.home-hero h1 span{
+  font-style:italic;
+  color:var(--accent);
+}
+
+.home-hero p{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:18px;
+}
+
+.home-tags{
+  margin-top:25px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.home-tags span{
+  padding:6px 14px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:rgba(255,255,255,0.03);
+  color:var(--text);
+  font-size:12px;
+  font-weight:500;
+}
+
+.home-visual{
+  position:relative;
+}
+
+.home-card-main{
+  width:100%;
+  height:480px;
+  border:1px solid var(--border-bright);
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:var(--shadow-glow);
+  position:relative;
+}
+
+.home-card-main img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.home-card-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,var(--bg) 10%,transparent 70%);
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+
+.home-card-overlay strong{
+  font-family:"Playfair Display",serif;
+  font-size:24px;
+}
+
+.home-card-overlay p{
+  color:var(--muted);
+  font-size:13px;
+  margin-top:4px;
+}
+
+/* PORTFOLIO */
+
+.portfolio-tools{
+  margin-bottom:35px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.filter-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.filter-btn{
+  padding:8px 18px;
+  border:1px solid var(--border);
+  border-radius:30px;
+  background:var(--panel);
+  color:var(--muted);
+  font-size:12px;
+  font-weight:600;
+  transition:.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+  border-color:var(--accent);
+  background:var(--accent);
+  color:#0f0d0e;
+}
+
+.search-box{
+  min-width:280px;
+  flex:1;
+  max-width:380px;
+}
+
+.search-box input{
+  width:100%;
+  padding:10px 18px;
+  border:1px solid var(--border);
+  border-radius:30px;
+  background:var(--panel);
+  color:var(--text);
+  outline:none;
+}
+
+.search-box input:focus{
+  border-color:var(--accent);
+  box-shadow:var(--shadow-glow);
+}
+
+.collection-intro{
+  margin:40px 0 20px;
+  padding-bottom:15px;
+  border-bottom:1px solid var(--border);
+}
+
+.collection-intro h2{
+  font-family:"Playfair Display",serif;
+  font-size:28px;
+}
+
+.design-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.design-card{
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:var(--panel);
+  overflow:hidden;
+  transition:.25s ease;
+  display:flex;
+  flex-direction:column;
+}
+
+.design-card:hover{
+  border-color:var(--accent);
+  transform:translateY(-5px);
+  box-shadow:var(--shadow-glow);
+}
+
+.design-preview{
+  height:240px;
+  position:relative;
+  overflow:hidden;
+  background:var(--bg-soft);
+}
+
+.design-preview img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.4s;
+}
+
+.design-card:hover .design-preview img{
+  transform:scale(1.05);
+}
+
+.design-badge{
+  position:absolute;
+  top:12px;
+  left:12px;
+  padding:4px 10px;
+  border-radius:20px;
+  background:rgba(15,13,14,0.85);
+  border:1px solid var(--border-bright);
+  color:var(--accent);
+  font-size:10px;
+  font-weight:700;
+  text-transform:uppercase;
+}
+
+.design-code{
+  position:absolute;
+  top:12px;
+  right:12px;
+  padding:4px 10px;
+  border-radius:20px;
+  background:var(--accent);
+  color:#0f0d0e;
+  font-size:10px;
+  font-weight:700;
+}
+
+.design-body{
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.design-body h3{
+  font-family:"Playfair Display",serif;
+  font-size:20px;
+}
+
+.design-desc{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+  flex:1;
+}
+
+.design-tags{
+  margin-top:15px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+
+.design-tags span{
+  padding:3px 10px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.04);
+  color:var(--muted);
+  font-size:11px;
+  font-weight:500;
+}
+
+.design-actions{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+
+.design-btn{
+  padding:10px;
+  border:1px solid var(--border-bright);
+  border-radius:20px;
+  background:var(--bg-soft);
+  color:var(--text);
+  font-size:12px;
+  font-weight:600;
+  text-align:center;
+  transition:.2s;
+}
+
+.design-btn:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+.design-btn.primary{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#0f0d0e;
+}
+
+.design-btn.primary:hover{
+  background:#e2b486;
+}
+
+/* PACKAGES */
+
+.package-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+
+.package-card{
+  padding:36px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:var(--panel);
+  position:relative;
+}
+
+.package-card.featured{
+  border-color:var(--accent);
+  box-shadow:var(--shadow-glow);
+}
+
+.package-card h2{
+  font-family:"Playfair Display",serif;
+  font-size:32px;
+}
+
+.package-price{
+  margin-top:15px;
+  font-family:"Playfair Display",serif;
+  font-size:46px;
+  font-weight:700;
+  color:var(--accent);
+}
+
+.package-price small{
+  font-size:18px;
+  color:var(--muted);
+  font-family:"Plus Jakarta Sans",sans-serif;
+}
+
+.package-features{
+  margin-top:25px;
+  display:grid;
+  gap:12px;
+}
+
+.package-feature{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:14px;
+  color:var(--text);
+}
+
+.package-feature:before{
+  content:"✓";
+  color:var(--accent);
+  font-weight:700;
+}
+
+/* PREVIEW MODAL */
+
+.preview-modal{
+  position:fixed;
+  inset:0;
+  z-index:5000;
+  display:none;
+  flex-direction:column;
+  background:#050405;
+}
+
+.preview-modal.open{
+  display:flex;
+}
+
+.preview-toolbar{
+  min-height:64px;
+  padding:10px 20px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:20px;
+  align-items:center;
+  background:var(--panel);
+  border-bottom:1px solid var(--border);
+}
+
+.preview-back{
+  padding:8px 18px;
+  border:1px solid var(--border-bright);
+  border-radius:20px;
+  background:var(--bg-soft);
+  color:var(--text);
+  font-size:12px;
+  font-weight:600;
+}
+
+.preview-info strong{
+  display:block;
+  font-family:"Playfair Display",serif;
+  font-size:18px;
+}
+
+.preview-info span{
+  display:block;
+  color:var(--accent);
+  font-size:11px;
+  font-weight:600;
+}
+
+.preview-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.preview-stage{
+  flex:1;
+  padding:15px;
+  display:flex;
+  justify-content:center;
+  background:#000;
+}
+
+.preview-shell{
+  width:100%;
+  height:100%;
+  border-radius:12px;
+  overflow:hidden;
+  background:#fff;
+  transition:width .3s ease;
+}
+
+.preview-frame{
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* FOOTER */
+
+footer{
+  padding:50px 0 25px;
+  background:var(--bg-soft);
+  border-top:1px solid var(--border);
+  color:var(--muted);
+  font-size:13px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:40px;
+}
+
+.footer-bottom{
+  margin-top:40px;
+  padding-top:20px;
+  border-top:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+}
+
+.float-wa{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:999;
+  padding:12px 24px;
+  border-radius:99px;
+  background:var(--green);
+  color:#fff;
+  font-size:13px;
+  font-weight:600;
+  box-shadow:0 10px 30px rgba(37,211,102,0.3);
+}
+
+@media(max-width:900px){
+  .design-grid{ grid-template-columns:1fr 1fr; }
+  .home-grid, .package-grid, .footer-grid{ grid-template-columns:1fr; }
+  .nav-links{ display:none; }
+  .menu-btn{ display:block; }
+}
+
+@media(max-width:600px){
+  .design-grid{ grid-template-columns:1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="wrap nav">
+    <button class="brand nav-route" data-route="home">
+      <span class="brand-mark">C</span>
+      <span class="brand-copy">
+        <strong>Cafe & Dining</strong>
+        <span>Showcase Collection</span>
+      </span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <button class="nav-link nav-route" data-route="home">Home</button>
+      <button class="nav-link nav-route" data-route="portfolio">Portfolio</button>
+      <button class="nav-link nav-route" data-route="starter">Starter</button>
+      <button class="nav-link nav-route" data-route="advance">Advance</button>
+      <button class="nav-link nav-route" data-route="packages">Packages</button>
+      <button class="nav-link nav-route" data-route="contact">Contact</button>
+    </nav>
+
+    <button class="nav-cta nav-route" data-route="contact">Get Started</button>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<main>
+
+<!-- HOME PAGE -->
+<section class="page active" data-page="home">
+  <div class="home-hero">
+    <div class="wrap home-grid">
+      <div>
+        <div class="home-badge">✦ Premium Culinary Web Designs</div>
+        <h1>Elevate Your <span>Dining</span> Experience</h1>
+        <p>Showcase artisan menus, online reservations, ambiance galleries, and culinary concepts with bespoke designs engineered for hospitality businesses.</p>
+        
+        <div class="page-actions">
+          <button class="btn btn-primary nav-route" data-route="portfolio">Explore Portfolio</button>
+          <button class="btn btn-secondary nav-route" data-route="packages">View Pricing</button>
+        </div>
+
+        <div class="home-tags">
+          <span>Artisanal Coffee</span>
+          <span>Fine Dining</span>
+          <span>Modern Bistro</span>
+          <span>Online Reservations</span>
+        </div>
+      </div>
+
+      <div class="home-visual">
+        <div class="home-card-main">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85" alt="Restaurant Interior">
+          <div class="home-card-overlay">
+            <strong>Interactive Digital Menus</strong>
+            <p>Seamless mobile menu browsing, reservation integrations, and private event booking systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO PAGE -->
+<section class="page" data-page="portfolio">
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Design Collection</div>
+      <div class="title">Cafe & Restaurant Templates</div>
+      <p class="copy">Select any template below to test interactive live previews across desktop and mobile devices.</p>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="wrap">
+      <div class="portfolio-tools">
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Templates</button>
+          <button class="filter-btn" data-filter="starter">Starter</button>
+          <button class="filter-btn" data-filter="advance">Advance</button>
+        </div>
+
+        <div class="search-box">
+          <input id="portfolioSearch" type="search" placeholder="Search culinary concepts...">
+        </div>
+      </div>
+
+      <div id="starterSection">
+        <div class="collection-intro">
+          <h2>Starter Collection</h2>
+        </div>
+        <div class="design-grid" id="starterGrid"></div>
+      </div>
+
+      <div id="advanceSection">
+        <div class="collection-intro">
+          <h2>Advance & Specialty Collection</h2>
+        </div>
+        <div class="design-grid" id="advanceGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STARTER PAGE -->
+<section class="page" data-page="starter">
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Starter Tier</div>
+      <div class="title">Starter Cafe & Bistro Designs</div>
+      <p class="copy">Elegant, fast-loading one-page layouts ideal for cafes, coffee shops, and local eateries.</p>
+    </div>
+  </div>
+  <div class="content-section">
+    <div class="wrap">
+      <div class="design-grid" id="starterPageGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANCE PAGE -->
+<section class="page" data-page="advance">
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Advance & Specialty Tier</div>
+      <div class="title">Advance, Cyber & Luxury Concepts</div>
+      <p class="copy">Feature-rich multi-page experiences, glassmorphism layouts, editorial food portfolios, and fine dining designs.</p>
+    </div>
+  </div>
+  <div class="content-section">
+    <div class="wrap">
+      <div class="design-grid" id="advancePageGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES PAGE -->
+<section class="page" data-page="packages">
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Pricing Plans</div>
+      <div class="title">Hospitality Website Packages</div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="wrap package-grid">
+      <div class="package-card">
+        <h2>Starter Cafe</h2>
+        <div class="package-price"><small>RM</small>499</div>
+        <p style="color:var(--muted);margin-top:10px;">Ideal for artisan coffee shops, bakeries, and quick-service diners.</p>
+        <div class="package-features">
+          <div class="package-feature">Single-page responsive design</div>
+          <div class="package-feature">Digital food & beverage menu section</div>
+          <div class="package-feature">Location, Google Map & Opening hours</div>
+          <div class="package-feature">Direct WhatsApp ordering / inquiry link</div>
+        </div>
+      </div>
+
+      <div class="package-card featured">
+        <h2>Advance Dining</h2>
+        <div class="package-price"><small>RM</small>1,299</div>
+        <p style="color:var(--muted);margin-top:10px;">Tailored for fine dining establishments, multi-location bistros, and luxury venues.</p>
+        <div class="package-features">
+          <div class="package-feature">Multi-page structure (Story, Gallery, Menu, Contact)</div>
+          <div class="package-feature">Integrated Online Reservation system form</div>
+          <div class="package-feature">Interactive menu tabs & dietary filters</div>
+          <div class="package-feature">High-resolution food photo showcase</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT PAGE -->
+<section class="page" data-page="contact">
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Get In Touch</div>
+      <div class="title">Start Your Restaurant Project</div>
+      <p class="copy">Ready to upgrade your dining venue's digital footprint? Reach out to get started.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <strong style="font-family:'Playfair Display';font-size:18px;color:#fff;">Cafe & Restaurant Collection</strong>
+      <p style="margin-top:10px;">Crafted digital experiences for coffee bars, bistros, and fine dining venues.</p>
+    </div>
+    <div>
+      <h4 style="color:#fff;margin-bottom:10px;">Navigation</h4>
+      <p><a href="#/portfolio">Portfolio</a></p>
+      <p><a href="#/packages">Packages</a></p>
+    </div>
+    <div>
+      <h4 style="color:#fff;margin-bottom:10px;">Contact</h4>
+      <p>WhatsApp: +60 18-907 9798</p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Plannique Design Co. All rights reserved.</span>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/60189079798" target="_blank">💬 WhatsApp Inquiry</a>
+
+<!-- PREVIEW MODAL -->
+<div class="preview-modal" id="previewModal">
+  <div class="preview-toolbar">
+    <button class="preview-back" id="closePreview">← Back</button>
+    <div class="preview-info">
+      <strong id="previewThemeName">Theme Name</strong>
+      <span id="previewThemeMeta">Package Code</span>
+    </div>
+    <div class="preview-actions">
+      <a class="btn btn-primary" id="openFullDemo" href="#" target="_blank">Open Direct File ↗</a>
+    </div>
+  </div>
+  <div class="preview-stage">
+    <div class="preview-shell" id="previewShell">
+      <iframe class="preview-frame" id="previewFrame" src=""></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+/* 
+  Exact file list matching your cafe repository screenshot:
+  - starter.html
+  - modern-cafe.html
+  - premium.html
+  - editorial-luxury.html
+  - luxury-dining.html
+  - neo-brutalist.html
+  - cyber-glassmorphism.html
+  - advance.html
+  - advance1.html
+  - advance2.html
+*/
+
+const cafeDesigns = [
+  {
+    package: "starter",
+    name: "Classic Espresso & Bistro",
+    code: "CAF-STR-01",
+    file: "starter.html",
+    style: "Warm Cozy Classic",
+    desc: "A warm, welcoming layout tailored for neighborhood coffee shops, bakeries, and brunch spots.",
+    image: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=85",
+    tags: ["Starter", "Coffee Shop", "Bistro"]
+  },
+  {
+    package: "starter",
+    name: "Modern Urban Cafe",
+    code: "CAF-STR-02",
+    file: "modern-cafe.html",
+    style: "Minimalist Urban",
+    desc: "Sleek, modern design for artisan specialty roasters with digital menu cards and takeaway options.",
+    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=85",
+    tags: ["Starter", "Specialty Coffee", "Urban"]
+  },
+  {
+    package: "starter",
+    name: "Premium Dining Room",
+    code: "CAF-STR-PRM",
+    file: "premium.html",
+    style: "Elegant Dark Premium",
+    desc: "Sophisticated dark theme tailored for boutique eateries, wine bars, and contemporary lounge dining.",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=85",
+    tags: ["Starter", "Wine Bar", "Premium"]
+  },
+  {
+    package: "advance",
+    name: "Editorial Luxury Gastronomy",
+    code: "CAF-ADV-EDT",
+    file: "editorial-luxury.html",
+    style: "High-Fashion Editorial",
+    desc: "Magazine-style serif typography and full-screen culinary imagery for high-end dining experiences.",
+    image: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=85",
+    tags: ["Advance", "Editorial", "Gastronomy"]
+  },
+  {
+    package: "advance",
+    name: "Grand Luxury Dining",
+    code: "CAF-ADV-LUX",
+    file: "luxury-dining.html",
+    style: "Opulent Gold Accent",
+    desc: "Opulent layout featuring online table reservation forms, chef tasting menus, and private room bookings.",
+    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85",
+    tags: ["Advance", "Fine Dining", "Reservations"]
+  },
+  {
+    package: "advance",
+    name: "Neo-Brutalist Eatery",
+    code: "CAF-ADV-BRT",
+    file: "neo-brutalist.html",
+    style: "Trendy Neo-Brutalist",
+    desc: "Bold high-contrast design with punchy typography made for trendy pop-up kitchens and burger bars.",
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=85",
+    tags: ["Advance", "Neo-Brutalist", "Pop-up Kitchen"]
+  },
+  {
+    package: "advance",
+    name: "Cyber Glassmorphism Lounge",
+    code: "CAF-ADV-GLS",
+    file: "cyber-glassmorphism.html",
+    style: "Futuristic Glassmorphism",
+    desc: "Translucent UI cards and glowing neon accents designed for futuristic cocktail bars and nightlife venues.",
+    image: "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=800&q=85",
+    tags: ["Advance", "Cocktail Bar", "Glassmorphism"]
+  },
+  {
+    package: "advance",
+    name: "Artisan Culinary Concept",
+    code: "CAF-ADV-01",
+    file: "advance.html",
+    style: "Multi-Page Artisan",
+    desc: "Comprehensive multi-page structure with farm-to-table story, detailed menu breakdown, and event calendar.",
+    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=85",
+    tags: ["Advance", "Farm-to-Table", "Multi-Page"]
+  },
+  {
+    package: "advance",
+    name: "Bistronomy Signature",
+    code: "CAF-ADV-02",
+    file: "advance1.html",
+    style: "Contemporary Bistro",
+    desc: "Sleek bistro design focusing on seasonal ingredient highlights and integrated chef bio showcase.",
+    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=85",
+    tags: ["Advance", "Bistro", "Seasonal Menu"]
+  },
+  {
+    package: "advance",
+    name: "Haute Cuisine Showcase",
+    code: "CAF-ADV-03",
+    file: "advance2.html",
+    style: "Michelin Style Fine Dining",
+    desc: "Minimalist dark layout focusing on course pairings, sommelier recommendations, and VIP booking flow.",
+    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=85",
+    tags: ["Advance", "Michelin Style", "Sommelier"]
+  }
+];
+
+function createCard(design){
+  return `
+    <div class="design-card">
+      <div class="design-preview">
+        <img src="${design.image}" alt="${design.name}">
+        <span class="design-badge">${design.package}</span>
+        <span class="design-code">${design.code}</span>
+      </div>
+      <div class="design-body">
+        <h3>${design.name}</h3>
+        <p class="design-desc">${design.desc}</p>
+        <div class="design-tags">
+          ${design.tags.map(t=>`<span>${t}</span>`).join("")}
+        </div>
+        <div class="design-actions">
+          <button class="design-btn" onclick="openPreview('${design.code}')">Preview</button>
+          <a class="design-btn primary" href="${design.file}" target="_blank">View File</a>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// Render Grids
+const starterItems = cafeDesigns.filter(d=>d.package==='starter');
+const advanceItems = cafeDesigns.filter(d=>d.package==='advance');
+
+document.getElementById('starterGrid').innerHTML = starterItems.map(createCard).join('');
+document.getElementById('advanceGrid').innerHTML = advanceItems.map(createCard).join('');
+document.getElementById('starterPageGrid').innerHTML = starterItems.map(createCard).join('');
+document.getElementById('advancePageGrid').innerHTML = advanceItems.map(createCard).join('');
+
+// Navigation Handling
+const pages = document.querySelectorAll('.page');
+function showPage(route){
+  pages.forEach(p => p.classList.toggle('active', p.dataset.page === route));
+  window.scrollTo(0,0);
+}
+
+document.querySelectorAll('.nav-route').forEach(btn => {
+  btn.addEventListener('click', () => showPage(btn.dataset.route));
+});
+
+// Modal Preview
+const modal = document.getElementById('previewModal');
+const iframe = document.getElementById('previewFrame');
+
+function openPreview(code){
+  const item = cafeDesigns.find(d => d.code === code);
+  if(!item) return;
+  document.getElementById('previewThemeName').textContent = item.name;
+  document.getElementById('previewThemeMeta').textContent = `${item.code} · ${item.file}`;
+  document.getElementById('openFullDemo').href = item.file;
+  iframe.src = item.file;
+  modal.classList.add('open');
+}
+
+document.getElementById('closePreview').addEventListener('click', () => {
+  modal.classList.remove('open');
+  iframe.src = '';
+});
+</script>
+
+</body>
+</html>
