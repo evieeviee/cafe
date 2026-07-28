@@ -1,3 +1,1449 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mellow Bean Cafe</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><style>
-:root{--bg:#f5efe6;--ink:#392d25;--muted:#776b61;--line:#ddcfbf}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:DM Sans;background:var(--bg);color:var(--ink)}a{color:inherit;text-decoration:none}img{display:block;width:100%;object-fit:cover}.w{width:min(1080px,calc(100% - 32px));margin:auto}header{position:sticky;top:0;background:#f5efe6ee;border-bottom:1px solid var(--line);z-index:5}nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo,h1,h2,h3{font-family:Playfair Display}.logo{font-size:27px}.links{display:flex;gap:20px;font-weight:700;font-size:14px}.btn{display:inline-flex;padding:13px 18px;border-radius:99px;background:var(--ink);color:#fff;font-weight:700}.hero{padding:65px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}h1{font-size:clamp(48px,7vw,78px);line-height:1;margin:12px 0}p{color:var(--muted)}.hero img{height:520px;border-radius:180px 180px 22px 22px}section{padding:72px 0}h2{font-size:44px;margin:0 0 12px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.card{background:#fff;padding:22px;border:1px solid var(--line);border-radius:18px}.card h3{font-size:24px;margin:0}.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin-top:25px}.gallery img{height:250px;border-radius:15px}.contact{background:var(--ink);color:#fff;padding:34px;border-radius:24px;display:flex;justify-content:space-between;align-items:center;gap:20px}footer{padding:30px 0}@media(max-width:760px){.links{display:none}.grid,.cards,.gallery{grid-template-columns:1fr}.contact{display:block}}
-</style></head><body><header><nav class="w"><div class="logo">Mellow Bean</div><div class="links"><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></div><a class="btn" href="https://wa.me/60123456789">WhatsApp</a></nav></header><main><div class="hero"><div class="w grid"><div><small>NEIGHBOURHOOD CAFE</small><h1>Coffee, comfort and slow mornings.</h1><p>Fresh coffee, simple brunch plates and daily baked treats in a warm neighbourhood setting.</p><a class="btn" href="#menu">View Menu</a></div><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=85"></div></div><section id="menu"><div class="w"><h2>Popular Menu</h2><p>A simple preview of the cafe's most popular items.</p><div class="cards"><div class="card"><h3>Flat White</h3><p>Double espresso and silky milk.</p><b>RM12</b></div><div class="card"><h3>Truffle Scramble</h3><p>Soft eggs, sourdough and truffle.</p><b>RM28</b></div><div class="card"><h3>Burnt Cheesecake</h3><p>Rich and baked fresh daily.</p><b>RM16</b></div></div></div></section><section id="about" style="background:#ece1d4"><div class="w"><h2>A simple place to pause</h2><p>Mellow Bean was created for good coffee, honest food and easy conversations.</p><div class="gallery"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=85"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=85"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=85"></div></div></section><section id="visit"><div class="w"><div class="contact"><div><h2>Visit Mellow Bean</h2><p style="color:#d9cec5">12 Jalan Example, Kuala Lumpur<br>Daily 8 AM-8 PM</p></div><a class="btn" style="background:#fff;color:#392d25" href="https://maps.google.com">Open Map</a></div></div></section></main><footer><div class="w">2026 Mellow Bean Cafe</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Mellow Bean Cafe | Coffee, Brunch & Fresh Bakes in Kuala Lumpur</title>
+  <meta
+    name="description"
+    content="Visit Mellow Bean Cafe in Kuala Lumpur for freshly brewed coffee, simple brunch plates, daily baked treats and relaxed neighbourhood moments."
+  >
+  <meta
+    name="keywords"
+    content="Mellow Bean Cafe, cafe Kuala Lumpur, coffee shop KL, brunch Kuala Lumpur, fresh pastries KL, neighbourhood cafe"
+  >
+  <meta name="author" content="Mellow Bean Cafe">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#3d2d25">
+
+  <!-- Canonical: replace with the final live URL -->
+  <link rel="canonical" href="https://www.mellowbeancafe.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mellow Bean Cafe | Coffee, Brunch & Fresh Bakes">
+  <meta
+    property="og:description"
+    content="Fresh coffee, comforting brunch plates and daily baked treats in a warm neighbourhood setting."
+  >
+  <meta property="og:url" content="https://www.mellowbeancafe.com/">
+  <meta
+    property="og:image"
+    content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=85"
+  >
+  <meta property="og:locale" content="en_MY">
+  <meta property="og:site_name" content="Mellow Bean Cafe">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mellow Bean Cafe">
+  <meta
+    name="twitter:description"
+    content="Coffee, comfort and slow mornings in Kuala Lumpur."
+  >
+  <meta
+    name="twitter:image"
+    content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=85"
+  >
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23392d25'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-size='58' fill='%23f5efe6' font-family='serif'%3EM%3C/text%3E%3C/svg%3E"
+  >
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Local Business Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Mellow Bean Cafe",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=85",
+    "description": "A warm neighbourhood cafe serving fresh coffee, simple brunch plates and daily baked treats in Kuala Lumpur.",
+    "telephone": "+60123456789",
+    "priceRange": "RM",
+    "servesCuisine": ["Coffee", "Brunch", "Pastries"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 Jalan Example",
+      "addressLocality": "Kuala Lumpur",
+      "addressCountry": "MY"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/",
+      "https://www.facebook.com/",
+      "https://www.tiktok.com/"
+    ],
+    "url": "https://www.mellowbeancafe.com/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f5efe6;
+      --bg-soft: #ede2d4;
+      --paper: #fffdf9;
+      --ink: #392d25;
+      --muted: #776b61;
+      --line: #ddcfbf;
+      --accent: #b9784b;
+      --accent-dark: #8f5836;
+      --sage: #75806f;
+      --white: #ffffff;
+      --shadow: 0 24px 70px rgba(70, 49, 35, 0.12);
+      --sans: "DM Sans", sans-serif;
+      --serif: "Playfair Display", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      background:
+        radial-gradient(circle at 92% 5%, rgba(185, 120, 75, 0.12), transparent 24%),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .announcement {
+      padding: 10px 16px;
+      background: var(--ink);
+      color: #f4e8dc;
+      text-align: center;
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .announcement strong {
+      color: #f4bf8b;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(221, 207, 191, 0.8);
+      background: rgba(245, 239, 230, 0.9);
+      backdrop-filter: blur(16px);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.72rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 3px;
+      height: 2px;
+      background: var(--accent);
+      transition: right 0.25s ease;
+    }
+
+    .nav-links a:hover::after {
+      right: 0;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: transparent;
+      color: var(--ink);
+    }
+
+    .mobile-menu {
+      display: none;
+      padding: 12px 0 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .mobile-menu.open {
+      display: grid;
+      gap: 8px;
+    }
+
+    .mobile-menu a {
+      padding: 12px 4px;
+      font-weight: 700;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .btn {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 20px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+
+    .btn-dark {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .btn-dark:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      border-color: var(--line);
+      background: rgba(255, 255, 255, 0.58);
+      color: var(--ink);
+    }
+
+    .btn-light:hover {
+      border-color: var(--accent);
+      color: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      padding: 62px 0 82px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--accent-dark);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--serif);
+    }
+
+    h1 {
+      max-width: 650px;
+      margin: 16px 0 20px;
+      font-size: clamp(3.4rem, 7vw, 5.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(2.5rem, 5vw, 3.7rem);
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .hero-copy > p {
+      max-width: 580px;
+      font-size: 1.03rem;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .rating {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .rating-stars {
+      color: var(--accent);
+      letter-spacing: 0.12em;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-image {
+      position: relative;
+      overflow: hidden;
+      height: 540px;
+      border-radius: 220px 220px 28px 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-image img {
+      height: 100%;
+      transition: transform 0.8s ease;
+    }
+
+    .hero-image:hover img {
+      transform: scale(1.035);
+    }
+
+    .hero-shape {
+      position: absolute;
+      z-index: -1;
+      width: 190px;
+      height: 190px;
+      right: -35px;
+      top: -28px;
+      border-radius: 50%;
+      background: #e6c6ab;
+    }
+
+    .special-card {
+      position: absolute;
+      left: -26px;
+      bottom: 34px;
+      width: min(280px, 74%);
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      background: rgba(255, 253, 249, 0.9);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .special-card small {
+      color: var(--accent-dark);
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .special-card strong {
+      display: block;
+      margin-top: 7px;
+      font-family: var(--serif);
+      font-size: 1.35rem;
+    }
+
+    .special-card span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    section {
+      padding: 78px 0;
+    }
+
+    .section-intro {
+      max-width: 650px;
+    }
+
+    .menu-slider-wrap {
+      position: relative;
+      margin-top: 30px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(300px, 1fr);
+      gap: 18px;
+      overflow-x: auto;
+      padding: 2px 2px 18px;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent) transparent;
+      overscroll-behavior-inline: contain;
+    }
+
+    .menu-grid::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .menu-grid::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .menu-grid::-webkit-scrollbar-thumb {
+      border-radius: 99px;
+      background: var(--accent);
+    }
+
+    .menu-card {
+      scroll-snap-align: start;
+    }
+
+    .menu-slider-controls {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .slider-btn {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: var(--paper);
+      color: var(--ink);
+      box-shadow: 0 10px 24px rgba(70, 49, 35, 0.08);
+      transition: 0.3s ease;
+    }
+
+    .slider-btn:hover {
+      border-color: var(--accent);
+      background: var(--ink);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .menu-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--paper);
+      box-shadow: 0 14px 38px rgba(70, 49, 35, 0.06);
+      transition: 0.35s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .menu-card img {
+      height: 210px;
+      transition: transform 0.7s ease;
+    }
+
+    .menu-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .menu-card-body {
+      padding: 20px;
+    }
+
+    .menu-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: end;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .menu-meta span {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    .menu-meta strong {
+      color: var(--accent-dark);
+      font-size: 1rem;
+    }
+
+    .promo {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: center;
+      padding: 28px;
+      border-radius: 24px;
+      background:
+        linear-gradient(90deg, rgba(57, 45, 37, 0.96), rgba(96, 68, 50, 0.92)),
+        url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=85") center/cover;
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .promo h3 {
+      font-size: 2rem;
+    }
+
+    .promo p {
+      margin: 8px 0 0;
+      color: #e4d8cf;
+    }
+
+    .promo-price {
+      text-align: right;
+    }
+
+    .promo-price strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 2.1rem;
+    }
+
+    .promo-price span {
+      color: #d9c6b8;
+      font-size: 0.75rem;
+    }
+
+    .about {
+      background: var(--bg-soft);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .about-copy {
+      max-width: 480px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      grid-template-rows: 230px 230px;
+      gap: 12px;
+    }
+
+    .gallery img {
+      height: 100%;
+      border-radius: 18px;
+      box-shadow: 0 14px 35px rgba(70, 49, 35, 0.08);
+      transition: transform 0.5s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.015);
+    }
+
+    .gallery img:first-child {
+      grid-row: 1 / 3;
+    }
+
+    .reasons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .reason {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 253, 249, 0.72);
+    }
+
+    .reason-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #ead8c8;
+      font-size: 1.2rem;
+    }
+
+    .reason h3 {
+      margin-top: 16px;
+      font-size: 1.35rem;
+    }
+
+    .reason p {
+      margin-bottom: 0;
+      font-size: 0.86rem;
+    }
+
+    .reviews {
+      background: #efe7dc;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .review {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--paper);
+    }
+
+    .review-stars {
+      color: var(--accent);
+      letter-spacing: 0.12em;
+    }
+
+    .review blockquote {
+      margin: 18px 0 20px;
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      line-height: 1.45;
+    }
+
+    .review footer {
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .visit-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 18px;
+    }
+
+    .visit-card {
+      padding: 34px;
+      border-radius: 24px;
+      background: var(--ink);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .visit-card .eyebrow {
+      color: #f4bf8b;
+    }
+
+    .visit-card p {
+      color: #d9cec5;
+    }
+
+    .visit-details {
+      display: grid;
+      gap: 12px;
+      margin: 24px 0 28px;
+      color: #f7efe9;
+      font-size: 0.86rem;
+    }
+
+    .social-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 22px;
+    }
+
+    .social-row a {
+      min-width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 50%;
+      color: white;
+      font-size: 0.66rem;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+
+    .social-row a:hover {
+      background: white;
+      color: var(--ink);
+    }
+
+    .map-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 390px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background:
+        linear-gradient(rgba(245, 239, 230, 0.12), rgba(245, 239, 230, 0.22)),
+        url("https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&w=1200&q=85") center/cover;
+      box-shadow: var(--shadow);
+    }
+
+    .map-label {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      padding: 18px;
+      border-radius: 17px;
+      background: rgba(255, 253, 249, 0.9);
+      backdrop-filter: blur(14px);
+    }
+
+    .map-label strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 1.25rem;
+    }
+
+    .map-label span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 14px;
+      font-weight: 700;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 70;
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #207a4b;
+      color: white;
+      font-size: 0.72rem;
+      font-weight: 800;
+      box-shadow: 0 16px 35px rgba(32, 122, 75, 0.34);
+      transition: 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-4px) scale(1.03);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 860px) {
+      .nav-links,
+      .nav-actions .btn {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .visit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy {
+        order: 1;
+      }
+
+      .hero-visual {
+        order: 2;
+      }
+
+      .hero-image {
+        height: 500px;
+      }
+
+      .reasons {
+        grid-template-columns: 1fr;
+      }
+
+      .menu-grid {
+        grid-auto-columns: minmax(280px, 82vw);
+      }
+
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .announcement {
+        font-size: 0.64rem;
+      }
+
+      .hero {
+        padding-top: 42px;
+      }
+
+      .hero-image {
+        height: 430px;
+        border-radius: 150px 150px 22px 22px;
+      }
+
+      .special-card {
+        left: 10px;
+        bottom: 18px;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .promo {
+        grid-template-columns: 1fr;
+      }
+
+      .promo-price {
+        text-align: left;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 240px);
+      }
+
+      .gallery img:first-child {
+        grid-row: auto;
+      }
+
+      .footer-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">
+    <strong>Fresh pastries daily</strong> · Open every day from 8:00 AM to 8:00 PM
+  </div>
+
+  <header>
+    <nav class="wrap" aria-label="Primary navigation">
+      <a href="#home" class="logo" aria-label="Mellow Bean Cafe home">
+        Mellow <span>Bean</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn btn-dark" href="https://wa.me/60123456789" target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu wrap">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+      <a href="https://wa.me/60123456789" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Neighbourhood cafe</span>
+          <h1>Coffee, comfort and slow mornings.</h1>
+          <p>
+            Freshly brewed coffee, simple brunch plates and daily baked treats served in a warm neighbourhood setting.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#menu">View Menu</a>
+            <a class="btn btn-light" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+              Get Directions
+            </a>
+          </div>
+
+          <div class="rating">
+            <span class="rating-stars" aria-label="Five star rating">★★★★★</span>
+            <strong>4.8 Google Rating</strong>
+            <span>Based on recent guest reviews</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-shape"></div>
+
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=85"
+              alt="Fresh coffee served at Mellow Bean Cafe"
+              width="1200"
+              height="900"
+              loading="eager"
+            >
+          </div>
+
+          <div class="special-card">
+            <small>Today's Special</small>
+            <strong>Strawberry Matcha</strong>
+            <span>Fresh strawberry, premium matcha and creamy milk · RM16</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="wrap">
+        <div class="section-intro reveal">
+          <span class="eyebrow">Popular menu</span>
+          <h2>Guest favourites, made fresh.</h2>
+          <p>
+            A small preview of our most popular coffee, brunch and dessert selections.
+          </p>
+        </div>
+
+        <div class="menu-slider-wrap">
+          <div class="menu-grid" id="menuSlider" aria-label="Scrollable popular menu">
+            <article class="menu-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=900&q=85"
+                alt="Flat white coffee"
+                width="900"
+                height="600"
+                loading="lazy"
+              >
+              <div class="menu-card-body">
+                <h3>Flat White</h3>
+                <p>Double espresso finished with smooth, silky steamed milk.</p>
+                <div class="menu-meta">
+                  <span>Coffee</span>
+                  <strong>RM12</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=900&q=85"
+                alt="Iced matcha latte"
+                width="900"
+                height="600"
+                loading="lazy"
+              >
+              <div class="menu-card-body">
+                <h3>Strawberry Matcha</h3>
+                <p>Premium matcha, fresh strawberry and creamy milk.</p>
+                <div class="menu-meta">
+                  <span>Signature Drink</span>
+                  <strong>RM16</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85"
+                alt="Truffle scrambled eggs on toast"
+                width="900"
+                height="600"
+                loading="lazy"
+              >
+              <div class="menu-card-body">
+                <h3>Truffle Scramble</h3>
+                <p>Soft scrambled eggs, toasted sourdough and fragrant truffle.</p>
+                <div class="menu-meta">
+                  <span>Brunch</span>
+                  <strong>RM28</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1529563021893-cc83c992d75d?auto=format&fit=crop&w=900&q=85"
+                alt="Avocado toast"
+                width="900"
+                height="600"
+                loading="lazy"
+              >
+              <div class="menu-card-body">
+                <h3>Avocado Toast</h3>
+                <p>Smashed avocado, poached egg and toasted sourdough.</p>
+                <div class="menu-meta">
+                  <span>Brunch</span>
+                  <strong>RM24</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&q=85"
+                alt="French toast"
+                width="900"
+                height="600"
+                loading="lazy"
+              >
+              <div class="menu-card-body">
+                <h3>Berry French Toast</h3>
+                <p>Buttery brioche, seasonal berries and maple drizzle.</p>
+                <div class="menu-meta">
+                  <span>Sweet Brunch</span>
+                  <strong>RM22</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+                alt="Burnt cheesecake"
+                width="900"
+                height="600"
+                loading="lazy"
+              >
+              <div class="menu-card-body">
+                <h3>Burnt Cheesecake</h3>
+                <p>Rich, creamy and baked fresh daily with a caramelised top.</p>
+                <div class="menu-meta">
+                  <span>Dessert</span>
+                  <strong>RM16</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=85"
+                alt="Tiramisu dessert"
+                width="900"
+                height="600"
+                loading="lazy"
+              >
+              <div class="menu-card-body">
+                <h3>Classic Tiramisu</h3>
+                <p>Espresso-soaked layers with mascarpone and cocoa.</p>
+                <div class="menu-meta">
+                  <span>Dessert</span>
+                  <strong>RM18</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu-slider-controls" aria-label="Menu slider controls">
+            <button class="slider-btn" id="menuPrev" type="button" aria-label="Scroll menu left">←</button>
+            <button class="slider-btn" id="menuNext" type="button" aria-label="Scroll menu right">→</button>
+          </div>
+        </div>
+
+        <div class="promo reveal">
+          <div>
+            <span class="eyebrow" style="color:#f4bf8b">Weekend special</span>
+            <h3>Brunch Set for Slow Weekends</h3>
+            <p>Choose one main dish and one selected coffee, available every Saturday and Sunday.</p>
+          </div>
+
+          <div class="promo-price">
+            <strong>RM35</strong>
+            <span>Weekend only · While stocks last</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="wrap about-grid">
+        <div class="about-copy reveal">
+          <span class="eyebrow">Our story</span>
+          <h2>A simple place to pause.</h2>
+          <p>
+            Mellow Bean was created for good coffee, honest food and easy conversations. Whether you are meeting a friend, working quietly or enjoying a slow breakfast, our space is designed to feel warm and unhurried.
+          </p>
+          <a class="btn btn-light" href="#visit">Plan Your Visit</a>
+        </div>
+
+        <div class="gallery reveal" aria-label="Mellow Bean Cafe gallery">
+          <img
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=85"
+            alt="Warm cafe interior"
+            width="1000"
+            height="900"
+            loading="lazy"
+          >
+          <img
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=85"
+            alt="Coffee preparation at Mellow Bean Cafe"
+            width="700"
+            height="500"
+            loading="lazy"
+          >
+          <img
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=85"
+            alt="Coffee beans and brewing"
+            width="700"
+            height="500"
+            loading="lazy"
+          >
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="reasons">
+          <article class="reason reveal">
+            <div class="reason-icon">☕</div>
+            <h3>Freshly Brewed</h3>
+            <p>Carefully prepared coffee using freshly ground beans.</p>
+          </article>
+
+          <article class="reason reveal">
+            <div class="reason-icon">🥐</div>
+            <h3>Baked Daily</h3>
+            <p>Fresh pastries and desserts prepared for each day.</p>
+          </article>
+
+          <article class="reason reveal">
+            <div class="reason-icon">✦</div>
+            <h3>Easy Atmosphere</h3>
+            <p>A comfortable neighbourhood setting for quiet moments and conversations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <div class="wrap">
+        <div class="section-intro reveal">
+          <span class="eyebrow">Guest reviews</span>
+          <h2>What our guests say.</h2>
+          <p>Replace these sample reviews with verified customer feedback before publishing.</p>
+        </div>
+
+        <div class="review-grid">
+          <article class="review reveal">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>
+              “A lovely quiet cafe with excellent coffee and a very comfortable atmosphere.”
+            </blockquote>
+            <footer>Amanda L. · Google Review</footer>
+          </article>
+
+          <article class="review reveal">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>
+              “The burnt cheesecake is worth coming back for, and the team is always friendly.”
+            </blockquote>
+            <footer>Jason T. · Google Review</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="wrap visit-grid">
+        <div class="visit-card reveal">
+          <span class="eyebrow">Visit Mellow Bean</span>
+          <h2>Come by for coffee and a slower moment.</h2>
+          <p>Walk-ins are welcome. Contact us through WhatsApp for group visits or table enquiries.</p>
+
+          <div class="visit-details">
+            <span>12 Jalan Example, Kuala Lumpur</span>
+            <span>Daily · 8:00 AM–8:00 PM</span>
+            <span>+60 12-345 6789</span>
+            <span>hello@mellowbeancafe.com</span>
+          </div>
+
+          <div class="hero-actions">
+            <a
+              class="btn btn-light"
+              style="background:white"
+              href="https://maps.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Map
+            </a>
+            <a
+              class="btn btn-light"
+              style="background:transparent;color:white;border-color:rgba(255,255,255,.22)"
+              href="https://wa.me/60123456789"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp Us
+            </a>
+          </div>
+
+          <div class="social-row" aria-label="Social media links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+
+        <div class="map-card reveal" role="img" aria-label="Map preview for Mellow Bean Cafe">
+          <div class="map-label">
+            <strong>Mellow Bean Cafe</strong>
+            <span>12 Jalan Example · Kuala Lumpur</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© 2026 Mellow Bean Cafe. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/60123456789"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Mellow Bean Cafe on WhatsApp"
+  >
+    WA
+  </a>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+      document.body.classList.toggle("menu-open", mobileMenu.classList.contains("open"));
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        document.body.classList.remove("menu-open");
+      });
+    });
+
+    const menuSlider = document.getElementById("menuSlider");
+    const menuPrev = document.getElementById("menuPrev");
+    const menuNext = document.getElementById("menuNext");
+
+    function getMenuScrollAmount() {
+      const firstCard = menuSlider.querySelector(".menu-card");
+      if (!firstCard) return 320;
+
+      const sliderStyles = window.getComputedStyle(menuSlider);
+      const gap = parseFloat(sliderStyles.columnGap || sliderStyles.gap || 18);
+      return firstCard.getBoundingClientRect().width + gap;
+    }
+
+    menuPrev.addEventListener("click", () => {
+      menuSlider.scrollBy({
+        left: -getMenuScrollAmount(),
+        behavior: "smooth"
+      });
+    });
+
+    menuNext.addEventListener("click", () => {
+      menuSlider.scrollBy({
+        left: getMenuScrollAmount(),
+        behavior: "smooth"
+      });
+    });
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.14 }
+      );
+
+      revealElements.forEach(element => observer.observe(element));
+    } else {
+      revealElements.forEach(element => element.classList.add("visible"));
+    }
+  </script>
+</body>
+</html>
