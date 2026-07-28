@@ -1,3 +1,369 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aurelia Dining</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><style>
-:root{--bg:#f1ece3;--ink:#211f1b;--forest:#27352d;--gold:#b99462;--line:#d7cfc3;--muted:#756e65}*{box-sizing:border-box}body{margin:0;font-family:DM Sans;background:var(--bg);color:var(--ink)}button{font:inherit;cursor:pointer}img{display:block;width:100%;object-fit:cover}.w{width:min(1190px,calc(100% - 38px));margin:auto}header{position:fixed;inset:0 0 auto;background:#f1ece3ee;border-bottom:1px solid var(--line);z-index:10}nav{height:82px;display:flex;align-items:center;justify-content:space-between}.logo,h1,h2,h3{font-family:Playfair Display}.logo{font-size:29px}.links{display:flex;gap:20px;align-items:center}.navbtn{border:0;background:none;font-weight:700}.cta,.btn{padding:13px 19px;border:0;border-radius:99px;background:var(--forest);color:#fff;font-weight:700}main{padding-top:82px}.page{display:none;min-height:calc(100vh - 82px)}.page.active{display:block}.hero{min-height:720px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,#111c,#1112),url("https://images.unsplash.com/photo-1514933651103-005eec06c04b2?auto=format&fit=crop&w=1900&q=90") center/cover}h1{font-size:clamp(64px,8vw,102px);line-height:.9;max-width:820px;margin:12px 0}.hero p{color:#e6dfd8;max-width:620px;font-size:18px}section.content{padding:90px 0}h2{font-size:54px;margin:0}p{color:var(--muted)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.box{background:#fff;padding:25px;border:1px solid var(--line);border-radius:18px}.pagehero{padding:85px 0 60px;background:#e4dccf}.pagehero .two{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.pagehero img{height:370px;border-radius:24px}.menu{display:grid;grid-template-columns:1fr 1fr;gap:15px 45px;margin-top:30px}.dish{padding:17px 0;border-bottom:1px solid var(--line)}.dish div{display:flex;justify-content:space-between}.dish h3{font-size:23px;margin:0}.team{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.team article{background:#fff;border-radius:20px;overflow:hidden}.team img{height:350px}.team div{padding:20px}.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}.gallery img{height:290px;border-radius:16px}.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px}.panel{background:#fff;padding:27px;border:1px solid var(--line);border-radius:20px}input,select,textarea{width:100%;padding:13px;border:1px solid var(--line);border-radius:11px;margin:6px 0}textarea{height:115px}footer{padding:40px 0;background:#20231f;color:#ccc}@media(max-width:850px){.links{display:none}.pagehero .two,.grid3,.menu,.team,.gallery,.contact{grid-template-columns:1fr}}
-</style></head><body><header><nav class="w"><button class="navbtn logo" data-route="home">Aurelia</button><div class="links"><button class="navbtn" data-route="home">Home</button><button class="navbtn" data-route="menu">Menu</button><button class="navbtn" data-route="experience">Private Dining</button><button class="navbtn" data-route="team">Team</button><button class="navbtn" data-route="gallery">Gallery</button><button class="navbtn cta" data-route="contact">Reserve</button></div><button class="navbtn cta" data-route="contact">Reserve</button></nav></header><main><section class="page active" data-page="home"><div class="hero"><div class="w"><small>CONTEMPORARY EUROPEAN DINING</small><h1>An evening worth remembering.</h1><p>Seasonal ingredients, elegant plates and warm hospitality.</p><button class="btn" data-route="menu">Explore Menu</button></div></div><section class="content"><div class="w"><h2>More than a meal</h2><div class="grid3"><div class="box"><h3>Seasonal Menu</h3><p>Thoughtful dishes around exceptional produce.</p></div><div class="box"><h3>Private Dining</h3><p>Intimate celebrations with tailored menus.</p></div><div class="box"><h3>Curated Pairings</h3><p>Beverages matched to each course.</p></div></div></div></section></section><section class="page" data-page="menu"><div class="pagehero"><div class="w two"><div><small>SEASONAL MENU</small><h1>Crafted with restraint</h1></div><img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=85"></div></div><section class="content"><div class="w"><h2>Dinner Menu</h2><div class="menu"><div class="dish"><div><h3>Charred Scallops</h3><b>RM48</b></div><p>Cauliflower, brown butter and citrus.</p></div><div class="dish"><div><h3>Duck Breast</h3><b>RM88</b></div><p>Beetroot, cherry and jus.</p></div><div class="dish"><div><h3>Mushroom Risotto</h3><b>RM58</b></div><p>Parmesan, herbs and truffle.</p></div><div class="dish"><div><h3>Sea Bass</h3><b>RM82</b></div><p>Fennel, tomato and saffron.</p></div></div></div></section></section><section class="page" data-page="experience"><div class="pagehero"><div class="w"><h1>Celebrate beautifully</h1></div></div><section class="content"><div class="w grid3"><div class="box"><h3>Private Room</h3><p>Up to 16 guests.</p></div><div class="box"><h3>Celebration Menu</h3><p>Custom courses and styling.</p></div><div class="box"><h3>Corporate Dining</h3><p>Professional hosting.</p></div></div></section></section><section class="page" data-page="team"><div class="pagehero"><div class="w"><h1>Our Team</h1></div></div><section class="content"><div class="w team"><article><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=700&q=85"><div><h3>Chef Adrian Lim</h3><p>Executive Chef</p></div></article><article><img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=700&q=85"><div><h3>Chef Maya Chen</h3><p>Pastry Chef</p></div></article><article><img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?auto=format&fit=crop&w=700&q=85"><div><h3>Daniel Wong</h3><p>Restaurant Manager</p></div></article></div></section></section><section class="page" data-page="gallery"><div class="pagehero"><div class="w"><h1>Inside Aurelia</h1></div></div><section class="content"><div class="w gallery"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b2?auto=format&fit=crop&w=1100&q=85"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=700&q=85"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=85"></div></section></section><section class="page" data-page="contact"><div class="pagehero"><div class="w"><h1>Plan your evening</h1></div></div><section class="content"><div class="w contact"><div class="panel"><h2>Aurelia Dining</h2><p>Example House, Kuala Lumpur</p><p>Tue-Sun 6 PM-11 PM</p></div><form class="panel" onsubmit="event.preventDefault();alert('Connect to booking system')"><input placeholder="Name" required><input placeholder="Phone" required><input type="date" required><select><option>2 guests</option><option>3-4 guests</option></select><textarea placeholder="Notes"></textarea><button class="btn">Request Reservation</button></form></div></section></section></main><footer><div class="w">2026 Aurelia Dining</div></footer><script>const ps=[...document.querySelectorAll('[data-page]')],bs=[...document.querySelectorAll('[data-route]')];function go(r){ps.forEach(p=>p.classList.toggle('active',p.dataset.page===r));location.hash='#/'+r;scrollTo(0,0)}bs.forEach(b=>b.onclick=()=>go(b.dataset.route));let r=location.hash.replace('#/','')||'home';go(r);</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17231c">
+  <title>Aurelia Dining | Contemporary European Restaurant</title>
+  <meta name="description" content="Aurelia Dining is a contemporary European restaurant in Kuala Lumpur offering seasonal menus, private dining and curated wine pairings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Restaurant",
+    "name":"Aurelia Dining",
+    "servesCuisine":"Contemporary European",
+    "priceRange":"RM$$$",
+    "telephone":"+60168083598",
+    "email":"hello@aureliadining.com",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Example House",
+      "addressLocality":"Kuala Lumpur",
+      "addressCountry":"MY"
+    },
+    "openingHours":["Tu-Su 18:00-23:00"]
+  }
+  </script>
+
+  <style>
+    :root{
+      --cream:#f4efe5;
+      --paper:#fbf8f1;
+      --ink:#1c211d;
+      --forest:#17231c;
+      --forest-2:#25362b;
+      --sage:#94a18f;
+      --gold:#b98c54;
+      --gold-soft:#d8bd94;
+      --line:rgba(28,33,29,.16);
+      --muted:#746f67;
+      --white:#fff;
+      --shadow:0 24px 70px rgba(22,31,25,.14);
+      --serif:'Italiana',serif;
+      --sans:'DM Sans',sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);overflow-x:hidden}
+    body.menu-open{overflow:hidden}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    img{display:block;width:100%;object-fit:cover}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1220px,calc(100% - 42px));margin:auto}
+    .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+    .eyebrow:before{content:"";width:40px;height:1px;background:currentColor}
+    h1,h2,h3,.brand{font-family:var(--serif);font-weight:400}
+    h1{font-size:clamp(58px,8vw,116px);line-height:.88;letter-spacing:-.035em;margin:18px 0 26px}
+    h2{font-size:clamp(42px,5vw,70px);line-height:.98;letter-spacing:-.025em;margin:0}
+    h3{font-size:30px;line-height:1.05;margin:0}
+    p{color:var(--muted);line-height:1.75}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+    .reveal.show{opacity:1;transform:none}
+
+    header{position:fixed;inset:0 0 auto;z-index:50;transition:.35s}
+    header.scrolled{background:rgba(244,239,229,.94);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+    .nav{height:88px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+    .nav-left,.nav-right{display:flex;align-items:center;gap:24px}
+    .nav-right{justify-content:flex-end}
+    .brand{border:0;background:none;font-size:34px;letter-spacing:.03em}
+    .navlink{border:0;background:none;padding:9px 0;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;position:relative}
+    .navlink:after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:1px;background:var(--gold);transition:.3s}
+    .navlink:hover:after,.navlink.active:after{right:0}
+    .nav-cta,.btn{border:0;border-radius:0;background:var(--forest);color:white;padding:15px 22px;font-weight:700;letter-spacing:.04em;display:inline-flex;align-items:center;justify-content:center;gap:10px;transition:.3s}
+    .nav-cta:hover,.btn:hover{background:var(--gold);transform:translateY(-2px)}
+    .btn.outline{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+    .btn.outline:hover{background:var(--ink);color:#fff}
+    .mobile-toggle{display:none;border:0;background:none;font-size:22px}
+
+    .mobile-menu{position:fixed;inset:0;z-index:45;background:var(--forest);color:#fff;padding:120px 28px 35px;display:flex;flex-direction:column;gap:12px;transform:translateX(100%);transition:.45s cubic-bezier(.2,.8,.2,1)}
+    .mobile-menu.open{transform:none}
+    .mobile-menu button{background:none;border:0;color:#fff;text-align:left;font-family:var(--serif);font-size:42px;padding:7px 0}
+    .mobile-menu .small{font-family:var(--sans);font-size:15px;border-top:1px solid rgba(255,255,255,.18);margin-top:18px;padding-top:22px}
+
+    main{min-height:100vh}
+    .page{display:none;min-height:100vh;animation:pageIn .6s ease both}
+    .page.active{display:block}
+    @keyframes pageIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+    .home-hero{min-height:100vh;display:grid;grid-template-columns:1.08fr .92fr;background:var(--paper);position:relative;overflow:hidden}
+    .home-copy{display:flex;align-items:center;padding:130px max(48px,7vw) 70px;position:relative;z-index:2}
+    .home-copy p{max-width:600px;font-size:18px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:35px}
+    .home-image{position:relative;min-height:720px;overflow:hidden}
+    .home-image img{height:100%;filter:saturate(.85)}
+    .home-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(17,26,20,.72))}
+    .vertical-note{position:absolute;right:22px;bottom:38px;z-index:2;color:#fff;writing-mode:vertical-rl;text-transform:uppercase;letter-spacing:.25em;font-size:11px}
+    .hero-number{position:absolute;left:-18px;bottom:-25px;font-family:var(--serif);font-size:220px;line-height:1;color:rgba(185,140,84,.10)}
+
+    .intro-strip{background:var(--forest);color:#fff;padding:26px 0;overflow:hidden}
+    .marquee{display:flex;width:max-content;animation:marquee 30s linear infinite}
+    .marquee span{font-family:var(--serif);font-size:28px;padding:0 36px;white-space:nowrap;color:#e8dfd2}
+    .marquee i{color:var(--gold);font-size:11px;vertical-align:middle;margin-left:30px}
+    @keyframes marquee{to{transform:translateX(-50%)}}
+
+    .section{padding:105px 0}
+    .section-head{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:end;margin-bottom:52px}
+    .section-head p{margin:0;max-width:520px}
+    .feature-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;gap:18px}
+    .feature-card{min-height:420px;position:relative;overflow:hidden;background:var(--forest);color:#fff}
+    .feature-card img{height:100%;transition:transform .8s}
+    .feature-card:hover img{transform:scale(1.05)}
+    .feature-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(13,20,16,.82))}
+    .feature-card .copy{position:absolute;inset:auto 28px 28px;z-index:2}
+    .feature-card p{color:#ddd6cb;margin-bottom:0}
+
+    .page-banner{min-height:520px;padding:160px 0 80px;display:flex;align-items:flex-end;background:var(--forest);color:white;position:relative;overflow:hidden}
+    .page-banner.light{background:var(--paper);color:var(--ink)}
+    .page-banner .wrap{position:relative;z-index:2}
+    .page-banner p{max-width:560px;color:inherit;opacity:.72;font-size:18px}
+    .banner-shape{position:absolute;width:480px;height:480px;border:1px solid rgba(185,140,84,.38);border-radius:50%;right:-80px;top:80px}
+    .banner-shape:after{content:"";position:absolute;inset:45px;border:1px solid rgba(185,140,84,.2);border-radius:50%}
+
+    .story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}
+    .story-image{position:relative;padding:0 0 60px 60px}
+    .story-image img{height:620px}
+    .story-image:before{content:"";position:absolute;left:0;bottom:0;width:62%;height:72%;background:var(--gold-soft);z-index:-1}
+    .quote{font-family:var(--serif);font-size:38px;line-height:1.25;color:var(--forest);margin:32px 0}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px}
+    .stat{border-top:1px solid var(--line);padding-top:18px}
+    .stat b{display:block;font-family:var(--serif);font-size:42px;color:var(--forest)}
+    .stat span{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+
+    .menu-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:32px 0 45px}
+    .menu-tab{border:1px solid var(--line);background:transparent;padding:11px 18px;text-transform:uppercase;font-size:12px;font-weight:700;letter-spacing:.1em}
+    .menu-tab.active{background:var(--forest);color:#fff;border-color:var(--forest)}
+    .menu-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:start}
+    .menu-visual{position:sticky;top:120px}
+    .menu-visual img{height:640px}
+    .menu-list{display:grid;gap:0}
+    .dish{padding:25px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:20px}
+    .dish h3{font-size:27px}
+    .dish p{margin:8px 0 0}
+    .dish-price{font-weight:700;color:var(--gold);padding-top:7px}
+    .dish.hide{display:none}
+
+    .experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .experience-card{background:var(--paper);border:1px solid var(--line);padding:34px;min-height:360px;display:flex;flex-direction:column;justify-content:space-between;transition:.35s}
+    .experience-card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
+    .experience-card .num{font-family:var(--serif);font-size:70px;color:var(--gold-soft)}
+    .experience-card ul{padding:0;margin:24px 0 0;list-style:none;color:var(--muted)}
+    .experience-card li{padding:9px 0;border-top:1px solid var(--line)}
+    .event-banner{margin-top:70px;display:grid;grid-template-columns:1fr 1fr;background:var(--forest);color:#fff}
+    .event-banner img{height:100%;min-height:480px}
+    .event-copy{padding:60px;display:flex;flex-direction:column;justify-content:center}
+    .event-copy p{color:#d8d0c5}
+
+    .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .team-card{position:relative;overflow:hidden;background:#ddd}
+    .team-card img{height:560px;filter:saturate(.8);transition:.7s}
+    .team-card:hover img{transform:scale(1.04)}
+    .team-card .team-copy{position:absolute;inset:auto 0 0;padding:65px 26px 25px;color:white;background:linear-gradient(transparent,rgba(11,18,14,.88))}
+    .team-card p{color:#e4ddd2;margin:5px 0 0}
+
+    .gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:130px;gap:12px}
+    .gallery-item{border:0;padding:0;overflow:hidden;position:relative;background:#ddd}
+    .gallery-item img{height:100%;transition:.6s}
+    .gallery-item:hover img{transform:scale(1.05)}
+    .gallery-item:after{content:"+";position:absolute;right:16px;bottom:12px;color:white;font-size:28px;opacity:0;transition:.3s}
+    .gallery-item:hover:after{opacity:1}
+    .g1{grid-column:span 7;grid-row:span 4}.g2{grid-column:span 5;grid-row:span 2}.g3{grid-column:span 5;grid-row:span 2}.g4{grid-column:span 4;grid-row:span 3}.g5{grid-column:span 4;grid-row:span 3}.g6{grid-column:span 4;grid-row:span 3}
+    .lightbox{position:fixed;inset:0;z-index:100;background:rgba(10,15,12,.94);display:none;place-items:center;padding:30px}
+    .lightbox.open{display:grid}
+    .lightbox img{max-width:1100px;max-height:84vh;width:auto}
+    .lightbox-close{position:absolute;right:28px;top:24px;border:0;background:none;color:#fff;font-size:34px}
+
+    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}
+    .contact-info{background:var(--forest);color:#fff;padding:52px}
+    .contact-info p,.contact-info a{color:#d8d0c5}
+    .info-row{padding:20px 0;border-top:1px solid rgba(255,255,255,.15)}
+    .form-panel{background:var(--paper);border:1px solid var(--line);padding:45px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .field.full{grid-column:1/-1}
+    label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;margin-bottom:8px;color:var(--muted)}
+    input,select,textarea{width:100%;border:0;border-bottom:1px solid var(--line);background:transparent;border-radius:0;padding:14px 2px;outline:none;color:var(--ink)}
+    input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+    textarea{height:105px;resize:vertical}
+    .estimate{display:flex;justify-content:space-between;align-items:center;margin:28px 0;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .estimate strong{font-family:var(--serif);font-size:30px;color:var(--gold)}
+
+    footer{background:#101712;color:#d8d0c5;padding:65px 0 25px}
+    .footer-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:40px}
+    .footer-brand{font-family:var(--serif);font-size:48px;color:#fff}
+    footer p,footer a{color:#aaa59c}
+    .footer-links{display:grid;gap:10px}
+    .copyright{margin-top:42px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;font-size:12px}
+    .whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:40;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:white;font-size:25px;box-shadow:0 15px 40px rgba(0,0,0,.24);transition:.3s}
+    .whatsapp-float:hover{transform:translateY(-4px) scale(1.03)}
+
+    @media(max-width:1000px){
+      .nav-left,.nav-right .navlink{display:none}.mobile-toggle{display:block}.nav{grid-template-columns:1fr auto 1fr}.nav-right{display:flex}.home-hero{grid-template-columns:1fr}.home-copy{min-height:670px;padding:140px 28px 70px}.home-image{min-height:520px}.feature-grid{grid-template-columns:1fr 1fr}.feature-card:first-child{grid-column:1/-1}.section-head,.story-grid,.menu-layout,.event-banner,.contact-grid{grid-template-columns:1fr}.menu-visual{position:relative;top:auto}.menu-visual img{height:500px}.story-image{max-width:680px}.team-card img{height:470px}.event-copy{padding:45px}
+    }
+    @media(max-width:700px){
+      .wrap{width:min(100% - 28px,1220px)}.nav{height:76px}.nav-cta{padding:12px 15px;font-size:12px}.brand{font-size:29px}.section{padding:75px 0}.page-banner{min-height:430px;padding-top:125px}.feature-grid,.experience-grid,.team-grid,.form-grid{grid-template-columns:1fr}.feature-card:first-child{grid-column:auto}.feature-card{min-height:380px}.stats{grid-template-columns:1fr}.story-image{padding:0 0 35px 35px}.story-image img{height:470px}.menu-visual img{height:390px}.event-banner img{min-height:320px}.event-copy,.contact-info,.form-panel{padding:30px}.team-card img{height:500px}.gallery-grid{grid-template-columns:1fr;grid-auto-rows:280px}.gallery-item{grid-column:auto!important;grid-row:auto!important}.footer-grid{grid-template-columns:1fr}.copyright{display:grid;gap:8px}.home-copy h1{font-size:58px}.home-copy p{font-size:16px}.home-image{min-height:420px}.vertical-note{display:none}
+    }
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header id="siteHeader">
+    <nav class="nav wrap">
+      <div class="nav-left">
+        <button class="navlink" data-route="home">Home</button>
+        <button class="navlink" data-route="story">Story</button>
+        <button class="navlink" data-route="menu">Menu</button>
+      </div>
+      <button class="brand" data-route="home" aria-label="Aurelia Home">Aurelia</button>
+      <div class="nav-right">
+        <button class="navlink" data-route="experience">Private Dining</button>
+        <button class="navlink" data-route="team">Team</button>
+        <button class="navlink" data-route="gallery">Gallery</button>
+        <button class="nav-cta" data-route="contact">Reserve</button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button data-route="home">Home</button><button data-route="story">Our Story</button><button data-route="menu">Menu</button><button data-route="experience">Private Dining</button><button data-route="team">Team</button><button data-route="gallery">Gallery</button><button data-route="contact">Reserve</button>
+    <div class="small">Tue-Sun · 6:00 PM-11:00 PM<br>Example House, Kuala Lumpur</div>
+  </div>
+
+  <main>
+    <section class="page active" data-page="home">
+      <div class="home-hero">
+        <div class="home-copy">
+          <div>
+            <span class="eyebrow">Contemporary European Dining</span>
+            <h1>An evening<br>in full bloom.</h1>
+            <p>Seasonal produce, elegant restraint and generous hospitality—composed into a dining experience that lingers long after the final course.</p>
+            <div class="hero-actions"><button class="btn" data-route="contact">Reserve a Table</button><button class="btn outline" data-route="menu">Discover the Menu</button></div>
+          </div>
+          <div class="hero-number">01</div>
+        </div>
+        <div class="home-image">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1400&q=90" alt="Aurelia Dining interior">
+          <div class="vertical-note">Kuala Lumpur · Est. 2026</div>
+        </div>
+      </div>
+      <div class="intro-strip"><div class="marquee"><span>Seasonal tasting menus <i class="fa-solid fa-diamond"></i></span><span>Private celebrations <i class="fa-solid fa-diamond"></i></span><span>Curated wine pairings <i class="fa-solid fa-diamond"></i></span><span>Seasonal tasting menus <i class="fa-solid fa-diamond"></i></span><span>Private celebrations <i class="fa-solid fa-diamond"></i></span><span>Curated wine pairings <i class="fa-solid fa-diamond"></i></span></div></div>
+      <section class="section"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">The Aurelia Experience</span><h2>Every detail,<br>considered.</h2></div><p>From the first welcome to the final pour, our service is designed around pace, comfort and quiet moments of delight.</p></div><div class="feature-grid"><article class="feature-card reveal"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=88" alt="Seasonal dish"><div class="copy"><h3>Seasonal Menu</h3><p>Produce-led plates that change with the rhythm of the market.</p></div></article><article class="feature-card reveal"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=88" alt="Private dining room"><div class="copy"><h3>Private Dining</h3><p>Intimate rooms for meaningful celebrations.</p></div></article><article class="feature-card reveal"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=88" alt="Wine pairing"><div class="copy"><h3>Curated Pairings</h3><p>Thoughtful selections for every course.</p></div></article></div></div></section>
+    </section>
+
+    <section class="page" data-page="story">
+      <div class="page-banner light"><div class="banner-shape"></div><div class="wrap"><span class="eyebrow">Our Story</span><h1>A dining room<br>with a point of view.</h1><p>Aurelia was created for guests who value beautiful food without formality and thoughtful service without theatre.</p></div></div>
+      <section class="section"><div class="wrap story-grid"><div class="story-image reveal"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=88" alt="Aurelia restaurant details"></div><div class="reveal"><span class="eyebrow">Our Philosophy</span><h2>Warmth over ceremony.</h2><p class="quote">“A memorable restaurant should feel discovered, not designed.”</p><p>Our kitchen takes a modern European approach shaped by local seasons. Ingredients are treated with precision, but the final plate remains expressive, generous and familiar.</p><p>The room follows the same philosophy: natural textures, soft lighting and attentive service create an atmosphere that feels elevated yet easy.</p><div class="stats"><div class="stat"><b>7</b><span>Signature courses</span></div><div class="stat"><b>16</b><span>Private room seats</span></div><div class="stat"><b>40+</b><span>Curated labels</span></div></div></div></div></section>
+    </section>
+
+    <section class="page" data-page="menu">
+      <div class="page-banner"><div class="banner-shape"></div><div class="wrap"><span class="eyebrow">Seasonal Menu</span><h1>Produce first.<br>Everything else follows.</h1><p>Our menu evolves regularly. The selections below are representative and may change according to market availability.</p></div></div>
+      <section class="section"><div class="wrap"><div class="menu-tabs"><button class="menu-tab active" data-filter="all">All</button><button class="menu-tab" data-filter="starter">Starters</button><button class="menu-tab" data-filter="main">Mains</button><button class="menu-tab" data-filter="dessert">Desserts</button></div><div class="menu-layout"><div class="menu-visual reveal"><img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=90" alt="Aurelia seasonal dish"></div><div class="menu-list reveal"><article class="dish" data-category="starter"><div><h3>Charred Hokkaido Scallops</h3><p>Cauliflower, brown butter, finger lime and chive oil.</p></div><div class="dish-price">RM48</div></article><article class="dish" data-category="starter"><div><h3>Heritage Tomato</h3><p>Goat curd, basil, strawberry vinegar and rye crisp.</p></div><div class="dish-price">RM38</div></article><article class="dish" data-category="main"><div><h3>Dry-Aged Duck Breast</h3><p>Beetroot, cherry, celeriac and spiced jus.</p></div><div class="dish-price">RM88</div></article><article class="dish" data-category="main"><div><h3>Line-Caught Sea Bass</h3><p>Fennel, tomato, saffron velouté and dill.</p></div><div class="dish-price">RM82</div></article><article class="dish" data-category="main"><div><h3>Forest Mushroom Risotto</h3><p>Parmesan, herbs, roasted garlic and black truffle.</p></div><div class="dish-price">RM58</div></article><article class="dish" data-category="dessert"><div><h3>Valrhona Chocolate</h3><p>Hazelnut praline, malt ice cream and sea salt.</p></div><div class="dish-price">RM36</div></article><article class="dish" data-category="dessert"><div><h3>Burnt Honey Pear</h3><p>Vanilla mascarpone, almond and chamomile.</p></div><div class="dish-price">RM34</div></article></div></div></div></section>
+    </section>
+
+    <section class="page" data-page="experience">
+      <div class="page-banner light"><div class="banner-shape"></div><div class="wrap"><span class="eyebrow">Private Dining</span><h1>Gather beautifully.</h1><p>From intimate birthdays to leadership dinners, we tailor the room, menu and service around the purpose of your occasion.</p></div></div>
+      <section class="section"><div class="wrap"><div class="experience-grid"><article class="experience-card reveal"><div class="num">01</div><div><h3>The Salon</h3><p>A private dining room for up to 16 guests.</p><ul><li>Dedicated service team</li><li>Customisable set menus</li><li>Optional floral styling</li></ul></div></article><article class="experience-card reveal"><div class="num">02</div><div><h3>Celebration Table</h3><p>Designed for birthdays, anniversaries and family milestones.</p><ul><li>Personalised menu cards</li><li>Celebration dessert</li><li>Beverage pairing options</li></ul></div></article><article class="experience-card reveal"><div class="num">03</div><div><h3>Corporate Dining</h3><p>Professional hosting in a polished, discreet setting.</p><ul><li>Flexible seating plans</li><li>Presentation support</li><li>Consolidated billing</li></ul></div></article></div><div class="event-banner reveal"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=88" alt="Elegant private event"><div class="event-copy"><span class="eyebrow">Tailored Events</span><h2>Made for your moment.</h2><p>Our event team can assist with menus, seating, styling, dietary requirements and timing—so you can remain fully present with your guests.</p><button class="btn" data-route="contact">Enquire About an Event</button></div></div></div></section>
+    </section>
+
+    <section class="page" data-page="team">
+      <div class="page-banner"><div class="banner-shape"></div><div class="wrap"><span class="eyebrow">The People</span><h1>Crafted by many hands.</h1><p>Aurelia brings together culinary discipline, thoughtful hospitality and a shared belief that excellence should always feel natural.</p></div></div>
+      <section class="section"><div class="wrap team-grid"><article class="team-card reveal"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=88" alt="Chef Adrian Lim"><div class="team-copy"><h3>Adrian Lim</h3><p>Executive Chef</p></div></article><article class="team-card reveal"><img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=900&q=88" alt="Chef Maya Chen"><div class="team-copy"><h3>Maya Chen</h3><p>Pastry Chef</p></div></article><article class="team-card reveal"><img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?auto=format&fit=crop&w=900&q=88" alt="Daniel Wong"><div class="team-copy"><h3>Daniel Wong</h3><p>Restaurant Manager</p></div></article></div></section>
+    </section>
+
+    <section class="page" data-page="gallery">
+      <div class="page-banner light"><div class="banner-shape"></div><div class="wrap"><span class="eyebrow">Gallery</span><h1>Inside Aurelia.</h1><p>Quiet textures, graceful plates and evenings that unfold at their own pace.</p></div></div>
+      <section class="section"><div class="wrap gallery-grid"><button class="gallery-item g1"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1400&q=88" alt="Aurelia dining room"></button><button class="gallery-item g2"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=88" alt="Restaurant table setting"></button><button class="gallery-item g3"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=88" alt="Plated dish"></button><button class="gallery-item g4"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=88" alt="Restaurant interior"></button><button class="gallery-item g5"><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=88" alt="Dining room ambience"></button><button class="gallery-item g6"><img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=900&q=88" alt="Fine dining dish"></button></div></section>
+    </section>
+
+    <section class="page" data-page="contact">
+      <div class="page-banner"><div class="banner-shape"></div><div class="wrap"><span class="eyebrow">Reservations</span><h1>Plan your evening.</h1><p>Send your preferred date and dining details. Our team will confirm availability through WhatsApp.</p></div></div>
+      <section class="section"><div class="wrap contact-grid"><aside class="contact-info reveal"><span class="eyebrow">Visit Us</span><h2>Aurelia Dining</h2><div class="info-row"><b>Address</b><p>Example House<br>Kuala Lumpur, Malaysia</p></div><div class="info-row"><b>Opening Hours</b><p>Tuesday-Sunday<br>6:00 PM-11:00 PM</p></div><div class="info-row"><b>Contact</b><p><a href="tel:+60168083598">+60 16-808 3598</a><br><a href="mailto:hello@aureliadining.com">hello@aureliadining.com</a></p></div></aside><form class="form-panel reveal" id="reservationForm"><span class="eyebrow">Reservation Request</span><h2>Tell us the details.</h2><div class="form-grid"><div class="field"><label for="guestName">Name</label><input id="guestName" required placeholder="Your full name"></div><div class="field"><label for="guestPhone">Phone</label><input id="guestPhone" required placeholder="Mobile number"></div><div class="field"><label for="guestDate">Date</label><input id="guestDate" type="date" required></div><div class="field"><label for="guestTime">Time</label><select id="guestTime" required><option value="">Select time</option><option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option><option>9:00 PM</option></select></div><div class="field"><label for="guestCount">Guests</label><select id="guestCount" required><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="6">5-6 guests</option><option value="10">7-10 guests</option><option value="16">Private dining enquiry</option></select></div><div class="field"><label for="menuChoice">Experience</label><select id="menuChoice"><option value="0">A la carte</option><option value="198">5-course menu · RM198</option><option value="288">7-course menu · RM288</option><option value="398">7-course with pairing · RM398</option></select></div><div class="field full"><label for="guestNotes">Notes</label><textarea id="guestNotes" placeholder="Dietary requirements, celebration details or special requests"></textarea></div></div><div class="estimate"><span>Estimated menu total</span><strong id="estimatedTotal">To be confirmed</strong></div><button class="btn" type="submit"><i class="fa-brands fa-whatsapp"></i> Request via WhatsApp</button></form></div></section>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><div class="footer-grid"><div><div class="footer-brand">Aurelia</div><p>Contemporary European dining shaped by season, restraint and warm hospitality.</p></div><div><h3>Explore</h3><div class="footer-links"><button class="navlink" data-route="menu">Menu</button><button class="navlink" data-route="experience">Private Dining</button><button class="navlink" data-route="gallery">Gallery</button></div></div><div><h3>Connect</h3><div class="footer-links"><a href="tel:+60168083598">+60 16-808 3598</a><a href="mailto:hello@aureliadining.com">hello@aureliadining.com</a><a href="#">Instagram</a></div></div></div><div class="copyright"><span>© 2026 Aurelia Dining. All rights reserved.</span><span>Signature Website Experience</span></div></div></footer>
+
+  <a class="whatsapp-float" href="https://wa.me/60168083598" target="_blank" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <div class="lightbox" id="lightbox"><button class="lightbox-close" id="lightboxClose" aria-label="Close gallery"><i class="fa-solid fa-xmark"></i></button><img id="lightboxImage" alt="Gallery preview"></div>
+
+  <script>
+    const pages=[...document.querySelectorAll('[data-page]')];
+    const routeButtons=[...document.querySelectorAll('[data-route]')];
+    const header=document.getElementById('siteHeader');
+    const mobileMenu=document.getElementById('mobileMenu');
+    const mobileToggle=document.getElementById('mobileToggle');
+    const validRoutes=['home','story','menu','experience','team','gallery','contact'];
+
+    function runReveal(){
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}}),{threshold:.14});
+      document.querySelectorAll('.page.active .reveal').forEach(el=>observer.observe(el));
+    }
+
+    function go(route,updateHash=true){
+      if(!validRoutes.includes(route)) route='home';
+      pages.forEach(page=>page.classList.toggle('active',page.dataset.page===route));
+      document.querySelectorAll('.navlink').forEach(btn=>btn.classList.toggle('active',btn.dataset.route===route));
+      mobileMenu.classList.remove('open');
+      document.body.classList.remove('menu-open');
+      mobileToggle.innerHTML='<i class="fa-solid fa-bars"></i>';
+      if(updateHash) history.pushState({route},'',`#/${route}`);
+      window.scrollTo({top:0,behavior:'instant'});
+      setTimeout(runReveal,80);
+    }
+
+    routeButtons.forEach(btn=>btn.addEventListener('click',()=>go(btn.dataset.route)));
+    mobileToggle.addEventListener('click',()=>{
+      const open=mobileMenu.classList.toggle('open');
+      document.body.classList.toggle('menu-open',open);
+      mobileToggle.innerHTML=open?'<i class="fa-solid fa-xmark"></i>':'<i class="fa-solid fa-bars"></i>';
+    });
+    window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>30));
+    window.addEventListener('popstate',()=>go(location.hash.replace('#/','')||'home',false));
+
+    document.querySelectorAll('.menu-tab').forEach(tab=>tab.addEventListener('click',()=>{
+      document.querySelectorAll('.menu-tab').forEach(t=>t.classList.remove('active'));
+      tab.classList.add('active');
+      const filter=tab.dataset.filter;
+      document.querySelectorAll('.dish').forEach(dish=>dish.classList.toggle('hide',filter!=='all'&&dish.dataset.category!==filter));
+    }));
+
+    const lightbox=document.getElementById('lightbox');
+    const lightboxImage=document.getElementById('lightboxImage');
+    document.querySelectorAll('.gallery-item').forEach(item=>item.addEventListener('click',()=>{
+      lightboxImage.src=item.querySelector('img').src;
+      lightbox.classList.add('open');
+      document.body.classList.add('menu-open');
+    }));
+    function closeLightbox(){lightbox.classList.remove('open');document.body.classList.remove('menu-open')}
+    document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
+    lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});
+
+    const guestCount=document.getElementById('guestCount');
+    const menuChoice=document.getElementById('menuChoice');
+    const estimatedTotal=document.getElementById('estimatedTotal');
+    function updateEstimate(){
+      const price=Number(menuChoice.value);
+      const guests=Number(guestCount.value);
+      estimatedTotal.textContent=price?`RM${(price*guests).toLocaleString('en-MY')}`:'To be confirmed';
+    }
+    guestCount.addEventListener('change',updateEstimate);
+    menuChoice.addEventListener('change',updateEstimate);
+
+    document.getElementById('reservationForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const number='60168083598';
+      const text=`Aurelia Reservation Request\n\nName: ${document.getElementById('guestName').value}\nPhone: ${document.getElementById('guestPhone').value}\nDate: ${document.getElementById('guestDate').value}\nTime: ${document.getElementById('guestTime').value}\nGuests: ${guestCount.options[guestCount.selectedIndex].text}\nExperience: ${menuChoice.options[menuChoice.selectedIndex].text}\nEstimated Total: ${estimatedTotal.textContent}\nNotes: ${document.getElementById('guestNotes').value||'None'}`;
+      window.open(`https://wa.me/${number}?text=${encodeURIComponent(text)}`,'_blank');
+    });
+
+    const initial=location.hash.replace('#/','')||'home';
+    go(initial,false);
+  </script>
+</body>
+</html>
