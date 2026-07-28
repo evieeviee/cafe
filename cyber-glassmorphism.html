@@ -1,338 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N E O X I D E // Cyber-Organic Mixology & Sub-Zero Gastronomy</title>
-    <meta name="description" content="Enter NEOXIDE. A futuristic culinary engine utilizing sub-zero flash freezing, molecular mixology extractions, and bioluminescent ambient design grids.">
-    
-    <!-- Premium Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05060a">
+  <meta name="description" content="NEOXIDE is an immersive cyber-organic dining and molecular mixology experience in Kuala Lumpur.">
+  <title>NEOXIDE — Cyber-Organic Gastronomy</title>
 
-    <!-- Schema Mapping for Local Business Visibility -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BarOrPub",
-      "name": "NEOXIDE Lounge",
-      "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=1200",
-      "priceRange": "$$$$",
-      "servesCuisine": "Molecular Gastronomy, Craft Cocktail Alchemy",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Grid Sector 7, Cyber Tunnel Lane",
-        "addressLocality": "Kuala Lumpur",
-        "addressCountry": "MY"
-      }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Restaurant",
+    "name":"NEOXIDE",
+    "servesCuisine":["Molecular Gastronomy","Contemporary Dining","Craft Cocktails"],
+    "priceRange":"$$$$",
+    "telephone":"+60 12-345 6789",
+    "address":{"@type":"PostalAddress","streetAddress":"Grid Sector 7, Cyber Tunnel Lane","addressLocality":"Kuala Lumpur","addressCountry":"MY"},
+    "openingHours":["Tu-Su 18:00-01:00"]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#05060a;--bg2:#090c14;--panel:rgba(13,17,29,.72);--panel-2:rgba(20,26,43,.62);
+      --line:rgba(166,184,255,.16);--line-strong:rgba(0,242,254,.42);--text:#f7f9ff;
+      --muted:#a4adbd;--cyan:#22f1ff;--violet:#8b5cf6;--pink:#ee5eff;--green:#25d366;
+      --display:'Orbitron',sans-serif;--body:'Inter',sans-serif;--radius:26px;
+      --shadow:0 30px 90px rgba(0,0,0,.42);
     }
-    </script>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;background:var(--bg)}
+    body{font-family:var(--body);color:var(--text);background:
+      radial-gradient(circle at 12% 10%,rgba(34,241,255,.09),transparent 27%),
+      radial-gradient(circle at 87% 18%,rgba(139,92,246,.12),transparent 30%),
+      linear-gradient(180deg,#05060a,#080b12 50%,#040509);min-height:100vh;overflow-x:hidden}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.2;background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,#000,transparent 82%)}
+    a{color:inherit} img{max-width:100%;display:block} button,input,select,textarea{font:inherit}
+    ::selection{background:rgba(34,241,255,.28);color:#fff}
+    .shell{width:min(1380px,calc(100% - 36px));margin:auto;position:relative;z-index:2}
+    .noise{position:fixed;inset:0;pointer-events:none;opacity:.05;z-index:99;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+    .cursor-glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(34,241,255,.08),transparent 68%);transform:translate(-50%,-50%)}
 
-    <style>
-        :root {
-            --bg-dark: #050609;
-            --glass-bg: rgba(13, 16, 27, 0.45);
-            --glass-border: rgba(99, 102, 241, 0.15);
-            --neon-cyan: #00f2fe;
-            --neon-purple: #7f00ff;
-            --neon-indigo: #6366f1;
-            --text-main: #f1f5f9;
-            --text-muted: #94a3b8;
-            --wa-green: #25D366;
-            --font-display: 'Orbitron', sans-serif;
-            --font-sans: 'Plus Jakarta Sans', sans-serif;
-        }
+    .site-header{position:sticky;top:16px;z-index:80;padding-top:16px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:15px 18px 15px 24px;border:1px solid var(--line);border-radius:22px;background:rgba(7,9,16,.72);backdrop-filter:blur(22px);box-shadow:0 18px 55px rgba(0,0,0,.35)}
+    .logo{font:900 1.22rem/1 var(--display);letter-spacing:.28em;text-decoration:none;background:linear-gradient(90deg,#fff,var(--cyan));-webkit-background-clip:text;color:transparent}
+    .desktop-nav{display:flex;align-items:center;gap:8px;list-style:none}
+    .nav-link{appearance:none;border:0;background:transparent;color:var(--muted);padding:10px 12px;border-radius:12px;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:.25s}
+    .nav-link:hover,.nav-link.active{color:#fff;background:rgba(255,255,255,.06)}
+    .nav-link.active{box-shadow:inset 0 -1px 0 var(--cyan)}
+    .nav-cta{border:1px solid rgba(34,241,255,.32);background:linear-gradient(135deg,rgba(34,241,255,.13),rgba(139,92,246,.13));color:#fff;padding:11px 15px;border-radius:13px;text-decoration:none;font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .mobile-toggle{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.04);color:#fff;cursor:pointer}
+    .mobile-menu{display:none;padding:10px;margin-top:8px;border:1px solid var(--line);border-radius:18px;background:rgba(7,9,16,.94);backdrop-filter:blur(20px)}
+    .mobile-menu.open{display:grid}
+    .mobile-menu .nav-link{text-align:left;padding:13px 12px}
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            font-family: var(--font-sans);
-            overflow-x: hidden;
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(0, 242, 254, 0.06) 0%, transparent 50%);
-            background-attachment: fixed;
-        }
+    .page{display:none;animation:pageIn .65s cubic-bezier(.2,.8,.2,1)}
+    .page.active{display:block}
+    @keyframes pageIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+    .section{padding:92px 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--cyan);font:700 .72rem/1 var(--display);letter-spacing:.24em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:34px;height:1px;background:linear-gradient(90deg,var(--cyan),transparent)}
+    h1,h2,h3{font-family:var(--display)}
+    .title-xl{font-size:clamp(3rem,7vw,7.4rem);line-height:.94;letter-spacing:-.055em;text-transform:uppercase}
+    .title-lg{font-size:clamp(2.2rem,4.6vw,4.6rem);line-height:1.03;letter-spacing:-.04em;text-transform:uppercase}
+    .gradient-text{background:linear-gradient(90deg,#fff 0%,var(--cyan) 44%,var(--pink));-webkit-background-clip:text;color:transparent}
+    .lede{max-width:700px;color:var(--muted);font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.8}
+    .btn-row{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:52px;padding:0 21px;border-radius:14px;text-decoration:none;border:1px solid transparent;font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.3s}
+    .btn-primary{background:linear-gradient(120deg,var(--cyan),#3b82f6 52%,var(--violet));color:#02040a;box-shadow:0 18px 40px rgba(34,241,255,.15)}
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 22px 52px rgba(34,241,255,.28)}
+    .btn-ghost{border-color:var(--line);background:rgba(255,255,255,.035);color:#fff}
+    .btn-ghost:hover{border-color:var(--line-strong);background:rgba(34,241,255,.06)}
 
-        /* Ambient Glow Nodes behind the interface layout */
-        .ambient-orb-1 { position: absolute; width: 500px; height: 500px; background: radial-gradient(circle, rgba(127,0,255,0.12) 0%, transparent 70%); top: -100px; right: -100px; pointer-events: none; z-index: 0; }
-        .ambient-orb-2 { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,242,254,0.08) 0%, transparent 70%); top: 600px; left: -200px; pointer-events: none; z-index: 0; }
+    .hero{min-height:calc(100vh - 110px);display:grid;grid-template-columns:1.04fr .96fr;gap:58px;align-items:center;padding:64px 0 80px}
+    .hero-copy{position:relative;z-index:2}.hero-copy .lede{margin:27px 0 34px}
+    .hero-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
+    .hero-meta strong{display:block;font:800 1rem var(--display);color:#fff}.hero-meta span{display:block;margin-top:7px;color:var(--muted);font-size:.77rem;letter-spacing:.08em;text-transform:uppercase}
+    .hero-visual{position:relative;min-height:660px}
+    .hero-image{position:absolute;inset:0 0 46px 44px;border-radius:34px;overflow:hidden;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow)}
+    .hero-image img{width:100%;height:100%;object-fit:cover;filter:saturate(1.08) contrast(1.07) brightness(.7);transform:scale(1.03);animation:slowZoom 14s ease-in-out infinite alternate}
+    @keyframes slowZoom{to{transform:scale(1.12)}}
+    .hero-image::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(2,5,10,.88)),linear-gradient(100deg,rgba(34,241,255,.08),transparent 42%)}
+    .scanline{position:absolute;left:44px;right:0;height:2px;top:12%;z-index:3;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.55;box-shadow:0 0 18px var(--cyan);animation:scan 5s linear infinite}
+    @keyframes scan{0%{top:11%;opacity:0}10%,80%{opacity:.55}100%{top:86%;opacity:0}}
+    .floating-card{position:absolute;z-index:4;padding:18px 20px;border:1px solid var(--line);border-radius:18px;background:rgba(8,11,19,.78);backdrop-filter:blur(16px);box-shadow:0 20px 50px rgba(0,0,0,.3)}
+    .floating-card.top{top:38px;left:0}.floating-card.bottom{right:-16px;bottom:0}
+    .floating-card small{display:block;color:var(--muted);font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}.floating-card strong{font:700 .92rem var(--display);color:var(--cyan)}
+    .orbit{position:absolute;width:170px;height:170px;border:1px solid rgba(34,241,255,.18);border-radius:50%;right:-38px;top:90px;animation:spin 18s linear infinite}.orbit::before,.orbit::after{content:"";position:absolute;border-radius:50%;background:var(--cyan);box-shadow:0 0 16px var(--cyan)}.orbit::before{width:7px;height:7px;left:18px;top:24px}.orbit::after{width:4px;height:4px;right:10px;bottom:40px}@keyframes spin{to{transform:rotate(360deg)}}
 
-        .container { max-width: 1400px; margin: 0 auto; padding: 0 30px; position: relative; z-index: 10; }
+    .ticker{overflow:hidden;border-block:1px solid var(--line);background:rgba(255,255,255,.018)}
+    .ticker-track{display:flex;width:max-content;animation:ticker 28s linear infinite;padding:15px 0}
+    .ticker span{font:700 .72rem var(--display);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);white-space:nowrap}.ticker b{color:var(--cyan);margin:0 22px}
+    @keyframes ticker{to{transform:translateX(-50%)}}
 
-        /* Advanced Blurred Navbar Module */
-        header {
-            position: sticky; top: 20px; z-index: 1000;
-            background: var(--glass-bg);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            padding: 20px 40px;
-            margin-top: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-        }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; }
-        .brand-logo { font-family: var(--font-display); font-weight: 900; font-size: 1.6rem; background: linear-gradient(45deg, #fff, var(--neon-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; letter-spacing: 4px; }
-        .nav-links { display: flex; gap: 30px; list-style: none; }
-        .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; transition: all 0.3s; }
-        .nav-links a:hover { color: var(--neon-cyan); text-shadow: 0 0 10px rgba(0,242,254,0.6); }
+    .intro-grid,.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+    .glass{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));backdrop-filter:blur(18px);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .story-card{padding:38px}.story-card p{color:var(--muted);line-height:1.85}.story-card p+p{margin-top:18px}
+    .metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.metric{padding:20px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}.metric strong{font:800 1.35rem var(--display);color:var(--cyan)}.metric span{display:block;color:var(--muted);font-size:.72rem;margin-top:8px;text-transform:uppercase;letter-spacing:.08em}
 
-        /* Kinetic Status Indicator Badge */
-        .status-beacon { display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); padding: 6px 14px; border-radius: 30px; font-size: 0.75rem; font-family: var(--font-display); text-transform: uppercase; color: var(--neon-cyan); letter-spacing: 1px; }
-        .beacon-dot { width: 8px; height: 8px; background: var(--neon-cyan); border-radius: 50%; box-shadow: 0 0 10px var(--neon-cyan); animation: pulse 2s infinite ease-in-out; }
-        @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+    .cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature-card{position:relative;min-height:370px;overflow:hidden;border-radius:26px;border:1px solid var(--line);background:#0a0d15}.feature-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.64) saturate(1.1);transition:.7s}.feature-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(3,5,10,.96))}.feature-card:hover img{transform:scale(1.07)}.feature-copy{position:absolute;z-index:2;left:24px;right:24px;bottom:25px}.feature-copy h3{font-size:1.22rem;text-transform:uppercase;margin-bottom:10px}.feature-copy p{font-size:.9rem;line-height:1.65;color:#c6cedd}
 
-        /* Graphic Cyber Hero Showcase Block */
-        .hero-layout { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; padding: 100px 0; align-items: center; }
-        .hero-left h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem, 5vw, 5.5rem); line-height: 1.05; letter-spacing: -2px; margin: 25px 0; text-transform: uppercase; }
-        .hero-left h1 span { display: block; background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero-left p { font-size: 1.15rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 45px; max-width: 600px; }
-        
-        /* Glassmorphism Interactive Cards */
-        .cyber-card { background: var(--glass-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--glass-border); border-radius: 24px; padding: 40px; box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3); position: relative; overflow: hidden; }
-        .cyber-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(230deg, transparent, rgba(99, 102, 241, 0.05)); pointer-events: none; }
+    .page-hero{padding:90px 0 58px;display:grid;grid-template-columns:1fr .72fr;gap:60px;align-items:end}.page-hero .lede{margin-top:24px}.page-code{justify-self:end;color:rgba(255,255,255,.07);font:900 clamp(6rem,13vw,12rem)/.75 var(--display)}
+    .menu-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0}.menu-tab{border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--muted);padding:11px 16px;border-radius:999px;cursor:pointer;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.menu-tab.active{color:#071017;background:var(--cyan);border-color:var(--cyan)}
+    .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.menu-item{display:flex;justify-content:space-between;gap:20px;padding:25px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.026);transition:.3s}.menu-item:hover{border-color:rgba(34,241,255,.35);transform:translateY(-3px)}.menu-item h3{font-size:1rem;text-transform:uppercase;letter-spacing:.04em}.menu-item p{color:var(--muted);font-size:.87rem;line-height:1.65;margin-top:9px}.price{white-space:nowrap;font:800 1rem var(--display);color:var(--cyan)}
 
-        /* Premium Graphic Visual Frame with Complex Gradients */
-        .graphic-frame-wrapper { position: relative; display: flex; justify-content: center; }
-        .graphic-frame-wrapper::after { content: ''; position: absolute; width: 100%; height: 100%; border: 2px solid var(--neon-cyan); opacity: 0.3; top: 20px; left: 20px; border-radius: 32px; z-index: 1; pointer-events: none; }
-        .main-display-image { width: 100%; height: 550px; object-fit: cover; border-radius: 32px; border: 1px solid rgba(255,255,255,0.1); position: relative; z-index: 2; filter: saturate(1.2) brightness(0.85) contrast(1.05); }
+    .experience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.experience-card{padding:30px}.experience-number{font:800 3rem var(--display);color:rgba(34,241,255,.15)}.experience-card h3{margin:12px 0 13px;text-transform:uppercase}.experience-card p{color:var(--muted);line-height:1.75}.experience-card ul{margin-top:18px;display:grid;gap:9px;list-style:none}.experience-card li{color:#d7deea;font-size:.88rem}.experience-card li::before{content:"+";color:var(--cyan);margin-right:10px}
 
-        /* Dynamic Digital Alchemical Menu Board */
-        .matrix-section { padding: 60px 0 120px 0; }
-        .section-tag { font-family: var(--font-display); text-transform: uppercase; color: var(--neon-indigo); letter-spacing: 4px; font-size: 0.9rem; margin-bottom: 15px; display: block; }
-        .section-title { font-family: var(--font-display); font-weight: 900; font-size: 2.8rem; margin-bottom: 60px; text-transform: uppercase; letter-spacing: 1px; }
-        
-        .grid-matrix { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; }
-        .menu-cyber-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 25px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-        .menu-cyber-row:hover { background: rgba(99, 102, 241, 0.08); border-color: rgba(99, 102, 241, 0.4); transform: translateY(-4px); }
-        .menu-meta h4 { font-family: var(--font-display); font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; color: #fff; }
-        .menu-meta p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; max-width: 320px; }
-        .menu-price { font-family: var(--font-display); font-size: 1.3rem; color: var(--neon-cyan); font-weight: 700; text-shadow: 0 0 10px rgba(0,242,254,0.3); }
+    .gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:220px;gap:14px}.gallery-item{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:20px;cursor:pointer}.gallery-item:nth-child(1){grid-column:span 7;grid-row:span 2}.gallery-item:nth-child(2){grid-column:span 5}.gallery-item:nth-child(3){grid-column:span 5}.gallery-item:nth-child(4){grid-column:span 4}.gallery-item:nth-child(5){grid-column:span 4}.gallery-item:nth-child(6){grid-column:span 4}.gallery-item img{width:100%;height:100%;object-fit:cover;filter:brightness(.76);transition:.6s}.gallery-item:hover img{transform:scale(1.06);filter:brightness(.95)}
+    .lightbox{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,.9);backdrop-filter:blur(14px)}.lightbox.open{display:flex}.lightbox img{max-width:min(1100px,94vw);max-height:88vh;border-radius:20px;border:1px solid var(--line)}.lightbox-close{position:absolute;right:24px;top:24px;width:44px;height:44px;border:1px solid var(--line);background:#0c1019;color:#fff;border-radius:50%;cursor:pointer}
 
-        /* Embedded Computation Booking System Engine */
-        .system-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; }
-        .input-group-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        
-        .neon-input-wrap { margin-bottom: 25px; }
-        .neon-input-wrap label { display: block; font-family: var(--font-display); font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; letter-spacing: 1px; }
-        .neon-input, .neon-select { width: 100%; background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); border-radius: 12px; padding: 16px 20px; font-family: inherit; color: #fff; font-size: 1rem; outline: none; transition: all 0.3s; }
-        .neon-input:focus, .neon-select:focus { border-color: var(--neon-cyan); box-shadow: 0 0 15px rgba(0, 242, 254, 0.25); background: rgba(0,0,0,0.6); }
-        
-        /* Real-Time Matrix Computation Summary Block */
-        .computation-panel { background: rgba(5, 6, 9, 0.6); border: 1px dashed var(--glass-border); border-radius: 16px; padding: 25px; margin-bottom: 30px; }
-        .comp-row { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 0.95rem; }
-        .comp-row:last-child { margin-bottom: 0; padding-top: 15px; border-top: 1px dashed var(--glass-border); font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--neon-cyan); }
-        
-        .action-button-cyber { width: 100%; background: linear-gradient(90deg, var(--neon-indigo), var(--neon-purple)); color: #fff; border: none; padding: 20px; border-radius: 14px; font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 12px; transition: all 0.3s; box-shadow: 0 10px 30px rgba(127, 0, 255, 0.3); }
-        .action-button-cyber:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(127, 0, 255, 0.5); filter: brightness(1.15); }
+    .event-packages{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.package{padding:30px;position:relative;overflow:hidden}.package.featured{border-color:rgba(34,241,255,.45)}.package.featured::before{content:"Most Requested";position:absolute;right:-42px;top:22px;width:170px;padding:7px 0;text-align:center;transform:rotate(35deg);background:var(--cyan);color:#031014;font-size:.64rem;font-weight:900;text-transform:uppercase}.package h3{text-transform:uppercase;font-size:1.08rem}.package .package-price{font:800 2.25rem var(--display);margin:22px 0 6px}.package small{color:var(--muted)}.package ul{list-style:none;display:grid;gap:13px;margin:26px 0}.package li{color:#d4dbea;font-size:.88rem}.package li i{color:var(--cyan);margin-right:9px}
 
-        footer { margin-top: 100px; padding: 40px 0; border-top: 1px solid var(--glass-border); text-align: center; color: var(--text-muted); font-size: 0.85rem; letter-spacing: 1px; }
+    .booking-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px}.form-card,.summary-card{padding:34px}.field-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.field{display:grid;gap:9px;margin-bottom:16px}.field.full{grid-column:1/-1}.field label{font:700 .68rem var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:13px;background:rgba(0,0,0,.26);color:#fff;padding:15px 16px;outline:none}.field textarea{min-height:110px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(34,241,255,.08)}select option{background:#0b0e16}.summary-card{display:flex;flex-direction:column;justify-content:space-between}.summary-rows{display:grid;gap:15px}.summary-row{display:flex;justify-content:space-between;gap:16px;color:var(--muted);padding-bottom:14px;border-bottom:1px solid var(--line)}.summary-row strong{color:#fff;text-align:right}.summary-total{display:flex;justify-content:space-between;align-items:flex-end;margin-top:20px}.summary-total strong{font:800 2rem var(--display);color:var(--cyan)}.notice{margin-top:24px;color:var(--muted);font-size:.82rem;line-height:1.65}
 
-        @media(max-width: 992px) {
-            .hero-layout, .system-grid, .input-group-row { grid-template-columns: 1fr; }
-            .nav-links, .status-beacon { display: none; }
-            .grid-matrix { grid-template-columns: 1fr; }
-            .main-display-image { height: 380px; }
-        }
-    </style>
+    .contact-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:26px}.contact-list{display:grid;gap:14px;margin-top:26px}.contact-row{display:flex;gap:14px;align-items:flex-start;padding:17px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025)}.contact-row i{color:var(--cyan);margin-top:3px}.contact-row strong{display:block;font-size:.85rem}.contact-row span{display:block;color:var(--muted);font-size:.82rem;margin-top:5px}.map-frame{min-height:500px;overflow:hidden}.map-frame iframe{width:100%;height:100%;border:0;filter:grayscale(1) invert(.88) hue-rotate(170deg) contrast(.85)}
+
+    footer{padding:45px 0 30px}.footer-inner{display:flex;justify-content:space-between;gap:22px;align-items:center;border-top:1px solid var(--line);padding-top:28px;color:var(--muted);font-size:.78rem}.socials{display:flex;gap:10px}.socials a{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line);border-radius:11px;text-decoration:none}.socials a:hover{border-color:var(--cyan);color:var(--cyan)}
+    .reveal{opacity:0;transform:translateY(24px);transition:.8s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:none}
+    .whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:70;width:57px;height:57px;display:grid;place-items:center;border-radius:50%;background:var(--green);color:#fff;text-decoration:none;font-size:1.5rem;box-shadow:0 14px 38px rgba(37,211,102,.33);animation:breathe 2.6s infinite}@keyframes breathe{50%{transform:translateY(-4px);box-shadow:0 18px 45px rgba(37,211,102,.48)}}
+
+    @media(max-width:1100px){.desktop-nav,.nav-cta{display:none}.mobile-toggle{display:block}.hero{grid-template-columns:1fr;min-height:auto;padding-top:76px}.hero-copy{max-width:830px}.hero-visual{min-height:560px}.intro-grid,.split,.page-hero,.booking-grid,.contact-grid{grid-template-columns:1fr}.page-code{display:none}.cards-3,.event-packages{grid-template-columns:repeat(2,1fr)}.event-packages .package:last-child{grid-column:1/-1}.gallery-grid{grid-auto-rows:190px}.map-frame{min-height:420px}}
+    @media(max-width:760px){.shell{width:min(100% - 24px,1380px)}.site-header{top:8px;padding-top:8px}.nav{padding:12px 12px 12px 16px}.logo{font-size:1rem}.section{padding:68px 0}.title-xl{font-size:clamp(2.65rem,14vw,4.4rem)}.title-lg{font-size:clamp(2rem,10vw,3.1rem)}.hero{gap:35px;padding:60px 0}.hero-visual{min-height:460px}.hero-image{inset:0 0 28px 18px;border-radius:24px}.scanline{left:18px}.floating-card.top{top:18px}.floating-card.bottom{right:-4px}.orbit{display:none}.hero-meta{gap:18px}.intro-grid,.split{gap:34px}.metric-grid,.cards-3,.menu-grid,.experience-grid,.event-packages,.field-grid{grid-template-columns:1fr}.event-packages .package:last-child{grid-column:auto}.page-hero{padding-top:68px}.gallery-grid{display:grid;grid-template-columns:1fr;grid-auto-rows:260px}.gallery-item,.gallery-item:nth-child(n){grid-column:auto;grid-row:auto}.form-card,.summary-card,.story-card,.experience-card,.package{padding:24px}.menu-item{padding:20px}.footer-inner{flex-direction:column;align-items:flex-start}.whatsapp-float{width:52px;height:52px;right:14px;bottom:14px}.cursor-glow{display:none}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}}
+  </style>
 </head>
 <body>
-
-    <div class="ambient-orb-1"></div>
-    <div class="ambient-orb-2"></div>
-
-    <div class="container">
-        <!-- FROSTED NAVIGATION LAYER -->
-        <header>
-            <div class="nav-container">
-                <a href="#" class="brand-logo">NEOXIDE</a>
-                <ul class="nav-links">
-                    <li><a href="#about">System</a></li>
-                    <li><a href="#menu">Menu Matrix</a></li>
-                    <li><a href="#reserve">Interface Block</a></li>
-                </ul>
-                <div class="status-beacon">
-                    <span class="beacon-dot"></span> Network Live
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <!-- CYBER GLOW HERO DISPLAY -->
-            <section class="hero-layout" id="about">
-                <div class="hero-left">
-                    <span class="status-beacon" style="background: rgba(99,102,241,0.1); border-color: rgba(99,102,241,0.3); color: var(--neon-indigo);">Operational Phase V</span>
-                    <h1>Sub-Zero Senses. <span>Alchemical Plating.</span></h1>
-                    <p>A multi-sensory environment processing progressive texture extraction, cryo-frozen elements, and high-frequency light pairings. We calibrate molecular cocktails and extreme culinary profiles dynamically across computational taste paths.</p>
-                    <a href="#reserve" class="action-button-cyber" style="max-width: 280px; text-decoration: none;">Initialize Interface</a>
-                </div>
-                <div class="graphic-frame-wrapper">
-                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=800" alt="High-tech glowing cocktail glass environment at NEOXIDE" class="main-display-image">
-                </div>
-            </section>
-
-            <!-- DYNAMIC MOLECULAR MENU MATRIX -->
-            <section class="matrix-section" id="menu">
-                <span class="section-tag">// Extraction Profiles</span>
-                <h2 class="section-title">The Current Database</h2>
-                
-                <div class="grid-matrix">
-                    <div class="menu-cyber-row">
-                        <div class="menu-meta">
-                            <h4>Hyperbaric Sea Trout</h4>
-                            <p>Compressed ocean cuts, oxygenated lime kelp spheres, sub-zero vaporized dill micro oil fields.</p>
-                        </div>
-                        <span class="menu-price">$48.00</span>
-                    </div>
-                    <div class="menu-cyber-row">
-                        <div class="menu-meta">
-                            <h4>Cryo-Smoked Ribeye Cut</h4>
-                            <p>Precision heat-seared protein cube injected with charcoal-wood smoke essence essence matrices.</p>
-                        </div>
-                        <span class="menu-price">$72.00</span>
-                    </div>
-                    <div class="menu-cyber-row">
-                        <div class="menu-meta">
-                            <h4>Centrifugal Jasmine Alchemist</h4>
-                            <p>Clarified botanical white rum run through molecular spinning filters, carbonated lavender mist finish.</p>
-                        </div>
-                        <span class="menu-price">$24.00</span>
-                    </div>
-                    <div class="menu-cyber-row">
-                        <div class="menu-meta">
-                            <h4>Liquid Nitrogen Pavlova</h4>
-                            <p>Ultra-frozen crisp meringue casing, melting core of hot slow-reduced black currant coulis matrix.</p>
-                        </div>
-                        <span class="menu-price">$19.00</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- COMPUTATION ENGINE & FORM MATRIX -->
-            <section class="matrix-section" id="reserve" style="padding-top: 0;">
-                <span class="section-tag">// Execution Terminal</span>
-                <h2 class="section-title">Configure Secure Block Allocation</h2>
-
-                <div class="cyber-card system-grid">
-                    <div>
-                        <form id="cyberEngineForm">
-                            <div class="neon-input-wrap">
-                                <label for="cUser">User Sequence Identity Identity</label>
-                                <input type="text" id="cUser" class="neon-input" placeholder="Enter Full Name" required>
-                            </div>
-                            
-                            <div class="input-group-row">
-                                <div class="neon-input-wrap">
-                                    <label for="cPackage">Gastronomy Tier</label>
-                                    <select id="cPackage" class="neon-select" required>
-                                        <option value="48">Trout Standard Track ($48/pax)</option>
-                                        <option value="72">Ribeye Premium Sequence ($72/pax)</option>
-                                        <option value="24">Alchemist Cocktail Experience ($24/pax)</option>
-                                    </select>
-                                </div>
-                                <div class="neon-input-wrap">
-                                    <label for="cSize">Node Count (Pax Size)</label>
-                                    <select id="cSize" class="neon-select" required>
-                                        <option value="1">1 Operator Node</option>
-                                        <option value="2" selected>2 Operator Nodes</option>
-                                        <option value="4">4 Operator Nodes</option>
-                                        <option value="6">6 Massive Cluster Nodes</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="neon-input-wrap">
-                                <label for="cTime">Matrix Timeline Window</label>
-                                <input type="datetime-local" id="cTime" class="neon-input" required>
-                            </div>
-
-                            <button type="submit" class="action-button-cyber" style="background: linear-gradient(90deg, #25D366, #128C7E); box-shadow: 0 10px 30px rgba(37,211,102,0.2);"><i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Relay Allocation Matrix</button>
-                        </form>
-                    </div>
-
-                    <!-- REALTIME JS GRAPHIC LEDGER PANELS -->
-                    <div style="display: flex; flex-direction: column; justify-content: center;">
-                        <div class="computation-panel">
-                            <h3 font-family="var(--font-display)" style="font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; color: #fff;"><i class="fas fa-microchip" style="color: var(--neon-cyan); margin-right: 10px;"></i> Ledger Matrix Calculations</h3>
-                            
-                            <div class="comp-row">
-                                <span>Selected Sequence Base Price:</span>
-                                <span id="calcBase">$48.00</span>
-                            </div>
-                            <div class="comp-row">
-                                <span>Multiplication Nodes (Pax):</span>
-                                <span id="calcNodes">x2</span>
-                            </div>
-                            <div class="comp-row">
-                                <span>System Processing Service (10%):</span>
-                                <span id="calcTax">$9.60</span>
-                            </div>
-                            <div class="comp-row">
-                                <span>Total Estimated Matrix Cost:</span>
-                                <span id="calcTotal">$105.60</span>
-                            </div>
-                        </div>
-                        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; text-align: justify;"><i class="fas fa-shield-alt" style="color: var(--neon-purple); margin-right: 8px;"></i> Security Protocol Notice: Submitting configurations pipes data arrays cleanly into custom text strings and transfers tracking down to our central reservation queue over WhatsApp API nodes instantly.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 NEOXIDE Matrix System Laboratories. Fully optimized structure using layered web vectors. All rights reserved.</p>
-        </footer>
+  <div class="noise"></div><div class="cursor-glow" id="cursorGlow"></div>
+  <div class="shell site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="#home" data-page-link="home">NEOXIDE</a>
+      <ul class="desktop-nav">
+        <li><button class="nav-link active" data-page-link="home">Home</button></li>
+        <li><button class="nav-link" data-page-link="story">Story</button></li>
+        <li><button class="nav-link" data-page-link="menu">Menu</button></li>
+        <li><button class="nav-link" data-page-link="experience">Experience</button></li>
+        <li><button class="nav-link" data-page-link="gallery">Gallery</button></li>
+        <li><button class="nav-link" data-page-link="events">Private Events</button></li>
+        <li><button class="nav-link" data-page-link="contact">Contact</button></li>
+      </ul>
+      <a class="nav-cta" href="#reserve" data-page-link="contact"><i class="fa-regular fa-calendar"></i> Reserve</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="nav-link" data-page-link="home">Home</button><button class="nav-link" data-page-link="story">Story</button><button class="nav-link" data-page-link="menu">Menu</button><button class="nav-link" data-page-link="experience">Experience</button><button class="nav-link" data-page-link="gallery">Gallery</button><button class="nav-link" data-page-link="events">Private Events</button><button class="nav-link" data-page-link="contact">Contact & Reserve</button>
     </div>
+  </div>
 
-    <!-- ADVANCED JS SYSTEM COMPUTATION LABELS -->
-    <script>
-        const packageSelector = document.getElementById('cPackage');
-        const sizeSelector = document.getElementById('cSize');
-        
-        function runMatrixCalculations() {
-            const baseValue = parseFloat(packageSelector.value);
-            const paxCount = parseInt(sizeSelector.value);
-            
-            const subtotal = baseValue * paxCount;
-            const operationalTax = subtotal * 0.10;
-            const grossTotal = subtotal + operationalTax;
-            
-            document.getElementById('calcBase').innerText = `$${baseValue.toFixed(2)}`;
-            document.getElementById('calcNodes').innerText = `x${paxCount}`;
-            document.getElementById('calcTax').innerText = `$${operationalTax.toFixed(2)}`;
-            document.getElementById('calcTotal').innerText = `$${grossTotal.toFixed(2)}`;
-        }
+  <main>
+    <section class="page active" id="page-home">
+      <div class="shell hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Kuala Lumpur · Night Protocol 07</span>
+          <h1 class="title-xl" style="margin-top:22px">Taste the <span class="gradient-text">Future.</span></h1>
+          <p class="lede">A cinematic collision of molecular cuisine, cryogenic cocktails and responsive light. NEOXIDE turns dinner into a seven-act sensory sequence.</p>
+          <div class="btn-row"><button class="btn btn-primary" data-page-link="contact">Reserve a Sequence <i class="fa-solid fa-arrow-right"></i></button><button class="btn btn-ghost" data-page-link="menu">Explore the Menu</button></div>
+          <div class="hero-meta"><div><strong>18:00—01:00</strong><span>Tuesday to Sunday</span></div><div><strong>12 Seats</strong><span>Chef's counter</span></div><div><strong>7 Acts</strong><span>Signature journey</span></div></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=90&w=1400" alt="Atmospheric premium cocktail lounge"></div>
+          <div class="scanline"></div><div class="orbit"></div>
+          <div class="floating-card top"><small>System Status</small><strong>● Experience Online</strong></div>
+          <div class="floating-card bottom"><small>Tonight's frequency</small><strong>Violet / 432Hz</strong></div>
+        </div>
+      </div>
+      <div class="ticker"><div class="ticker-track"><span>Sub-zero mixology <b>✦</b> Molecular tasting menu <b>✦</b> Responsive lightscape <b>✦</b> Chef's counter <b>✦</b> Private dining <b>✦</b> Sub-zero mixology <b>✦</b> Molecular tasting menu <b>✦</b> Responsive lightscape <b>✦</b> Chef's counter <b>✦</b> Private dining <b>✦</b></span></div></div>
+      <div class="shell section">
+        <div class="intro-grid reveal"><div><span class="eyebrow">Not just a restaurant</span><h2 class="title-lg" style="margin-top:20px">A living culinary <span class="gradient-text">interface.</span></h2></div><div class="glass story-card"><p>Our chefs, bartenders and visual artists operate as one system. Every course is synchronized with scent, sound, temperature and light to create a complete sensory narrative.</p><div class="metric-grid"><div class="metric"><strong>07</strong><span>Signature acts</span></div><div class="metric"><strong>04</strong><span>Liquid rituals</span></div><div class="metric"><strong>90</strong><span>Minutes immersive</span></div></div></div></div>
+      </div>
+      <div class="shell section" style="padding-top:0"><div class="cards-3 reveal"><article class="feature-card"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=85&w=900" alt="Fine dining dish"><div class="feature-copy"><h3>Molecular Cuisine</h3><p>Precision techniques turn familiar ingredients into unexpected textures, temperatures and forms.</p></div></article><article class="feature-card"><img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&q=85&w=900" alt="Craft cocktail"><div class="feature-copy"><h3>Cryogenic Mixology</h3><p>Clarified infusions, aromatic vapor and sub-zero finishes engineered at the bar.</p></div></article><article class="feature-card"><img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&q=85&w=900" alt="Immersive interior"><div class="feature-copy"><h3>Responsive Atmosphere</h3><p>A programmed visual environment shifts with every course and every chapter of the evening.</p></div></article></div></div>
+    </section>
 
-        packageSelector.addEventListener('change', runMatrixCalculations);
-        sizeSelector.addEventListener('change', runMatrixCalculations);
-        
-        // Initial setup sequence load
-        runMatrixCalculations();
+    <section class="page" id="page-story"><div class="shell page-hero"><div><span class="eyebrow">Page 02 · Origin</span><h2 class="title-lg" style="margin-top:22px">Built between <span class="gradient-text">science and instinct.</span></h2><p class="lede">NEOXIDE began as a collaboration between a chef, a flavor chemist and a light artist who believed hospitality could feel as progressive as performance art.</p></div><div class="page-code">02</div></div><div class="shell section" style="padding-top:30px"><div class="split reveal"><div class="glass" style="overflow:hidden"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=90&w=1100" alt="Chef in a professional kitchen" style="width:100%;height:610px;object-fit:cover;filter:brightness(.72)"></div><div><span class="eyebrow">The philosophy</span><h3 class="title-lg" style="font-size:clamp(2rem,4vw,3.7rem);margin:22px 0">Emotion first. Technique invisible.</h3><p class="lede">Behind every course sits a dense network of fermentation, distillation, temperature control and spatial choreography. Yet at the table, the experience remains intuitive: surprise, comfort, tension and release.</p><div class="metric-grid"><div class="metric"><strong>2019</strong><span>Concept formed</span></div><div class="metric"><strong>14</strong><span>Creative disciplines</span></div><div class="metric"><strong>01</strong><span>Unified experience</span></div></div></div></div></div></section>
 
-        // Advanced WhatsApp Engine Generation
-        document.getElementById('cyberEngineForm').addEventListener('submit', function(e){
-            e.preventDefault();
-            const waTargetNode = "60123456789"; // Input main receiving line number here
-            const identityName = document.getElementById('cUser').value;
-            const selectedText = packageSelector.options[packageSelector.selectedIndex].text;
-            const nodeQuantity = sizeSelector.options[sizeSelector.selectedIndex].text;
-            const timelineStamp = document.getElementById('cTime').value;
-            
-            const prettifiedDate = new Date(timelineStamp).toLocaleString();
-            const computedFinalCost = document.getElementById('calcTotal').innerText;
+    <section class="page" id="page-menu"><div class="shell page-hero"><div><span class="eyebrow">Page 03 · Menu Matrix</span><h2 class="title-lg" style="margin-top:22px">Current <span class="gradient-text">extractions.</span></h2><p class="lede">Seasonal dishes and liquid rituals built around smoke, pressure, fermentation and controlled temperature.</p></div><div class="page-code">03</div></div><div class="shell section" style="padding-top:25px"><div class="menu-tabs"><button class="menu-tab active" data-filter="all">All</button><button class="menu-tab" data-filter="food">Cuisine</button><button class="menu-tab" data-filter="cocktail">Cocktails</button><button class="menu-tab" data-filter="dessert">Desserts</button></div><div class="menu-grid" id="menuGrid">
+      <article class="menu-item" data-category="food"><div><h3>Hyperbaric Sea Trout</h3><p>Compressed trout, oxygenated lime-kelp pearls, dill vapor and chilled cucumber emulsion.</p></div><span class="price">RM 88</span></article>
+      <article class="menu-item" data-category="food"><div><h3>Cryo-Smoked Ribeye</h3><p>Binchotan-seared ribeye, smoked bone marrow glaze, fermented pepper and black garlic.</p></div><span class="price">RM 148</span></article>
+      <article class="menu-item" data-category="food"><div><h3>Solar Miso Cod</h3><p>Caramelized cod, saffron dashi, roasted leek ash and citrus kosho oil.</p></div><span class="price">RM 118</span></article>
+      <article class="menu-item" data-category="food"><div><h3>Mycelium Garden</h3><p>King oyster mushroom, truffle soil, kombu custard and pine-smoked mushroom tea.</p></div><span class="price">RM 72</span></article>
+      <article class="menu-item" data-category="cocktail"><div><h3>Jasmine Centrifuge</h3><p>Clarified botanical rum, jasmine hydrosol, lavender carbonation and edible mist.</p></div><span class="price">RM 58</span></article>
+      <article class="menu-item" data-category="cocktail"><div><h3>Violet Frequency</h3><p>Butterfly pea gin, yuzu plasma, saline orchid and ultraviolet tonic.</p></div><span class="price">RM 62</span></article>
+      <article class="menu-item" data-category="dessert"><div><h3>Liquid Nitrogen Pavlova</h3><p>Flash-frozen meringue, warm blackcurrant core, vanilla snow and electric mint.</p></div><span class="price">RM 48</span></article>
+      <article class="menu-item" data-category="dessert"><div><h3>Carbon Cacao</h3><p>Single-origin chocolate, smoked caramel, cocoa glass and nitrogen coffee cream.</p></div><span class="price">RM 52</span></article>
+    </div></div></section>
 
-            const finalPayloadText = `*⚡ NEOXIDE SYSTEM CORE ALLOCATION REGISTRY*%0A%0A` +
-                                     `*Operator Identity:* ${encodeURIComponent(identityName)}%0A` +
-                                     `*Sequence Track:* ${encodeURIComponent(selectedText)}%0A` +
-                                     `*System Capacity Nodes:* ${encodeURIComponent(nodeQuantity)}%0A` +
-                                     `*Timeline Window:* ${encodeURIComponent(prettifiedDate)}%0A` +
-                                     `*Ledger Estimate Total:* ${encodeURIComponent(computedFinalCost)}`;
-                                     
-            window.open(`https://wa.me/${waTargetNode}?text=${finalPayloadText}`, '_blank');
-        });
-    </script>
+    <section class="page" id="page-experience"><div class="shell page-hero"><div><span class="eyebrow">Page 04 · The Sequence</span><h2 class="title-lg" style="margin-top:22px">Choose your <span class="gradient-text">level of immersion.</span></h2><p class="lede">From an intimate tasting at the chef's counter to a complete audiovisual dining ritual.</p></div><div class="page-code">04</div></div><div class="shell section" style="padding-top:25px"><div class="experience-grid reveal"><article class="glass experience-card"><div class="experience-number">01</div><h3>Signal</h3><p>A focused introduction to the NEOXIDE universe for guests seeking a shorter evening.</p><ul><li>4-course tasting sequence</li><li>1 signature liquid pairing</li><li>Approx. 60 minutes</li><li>RM 238 per guest</li></ul></article><article class="glass experience-card"><div class="experience-number">02</div><h3>Transmission</h3><p>Our complete signature journey with synchronized light, sound and aroma transitions.</p><ul><li>7-course tasting sequence</li><li>3 liquid pairings</li><li>Approx. 90 minutes</li><li>RM 398 per guest</li></ul></article><article class="glass experience-card"><div class="experience-number">03</div><h3>Singularity</h3><p>The most exclusive version of NEOXIDE, hosted at the private chef's interface.</p><ul><li>10-course bespoke sequence</li><li>Full premium pairing</li><li>Chef interaction</li><li>RM 688 per guest</li></ul></article><article class="glass experience-card"><div class="experience-number">04</div><h3>Zero Proof</h3><p>A non-alcoholic botanical pairing built with distillates, tea extractions and fermentation.</p><ul><li>Available with any sequence</li><li>4 crafted pairings</li><li>Low-sugar options</li><li>From RM 98 per guest</li></ul></article></div></div></section>
+
+    <section class="page" id="page-gallery"><div class="shell page-hero"><div><span class="eyebrow">Page 05 · Visual Archive</span><h2 class="title-lg" style="margin-top:22px">Fragments from the <span class="gradient-text">night system.</span></h2><p class="lede">Tap any frame to enter the visual archive.</p></div><div class="page-code">05</div></div><div class="shell section" style="padding-top:25px"><div class="gallery-grid reveal"><div class="gallery-item"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=90&w=1400" alt="Premium lounge interior"></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=90&w=900" alt="Fine dining restaurant"></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&q=90&w=900" alt="Cocktail preparation"></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&q=90&w=900" alt="Artistic cocktail"></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&q=90&w=900" alt="Premium dining room"></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1550966841-3ee1d8d2e3d1?auto=format&fit=crop&q=90&w=900" alt="Elegant bar interior"></div></div></div></section>
+
+    <section class="page" id="page-events"><div class="shell page-hero"><div><span class="eyebrow">Page 06 · Private Systems</span><h2 class="title-lg" style="margin-top:22px">Events designed as <span class="gradient-text">experiences.</span></h2><p class="lede">Private celebrations, brand launches and executive dinners shaped around your story.</p></div><div class="page-code">06</div></div><div class="shell section" style="padding-top:25px"><div class="event-packages reveal"><article class="glass package"><h3>Private Table</h3><div class="package-price">RM 3,800</div><small>Up to 10 guests</small><ul><li><i class="fa-solid fa-check"></i>7-course signature menu</li><li><i class="fa-solid fa-check"></i>Dedicated host</li><li><i class="fa-solid fa-check"></i>Personalized welcome visual</li><li><i class="fa-solid fa-check"></i>Celebration dessert moment</li></ul><button class="btn btn-ghost" data-page-link="contact">Enquire</button></article><article class="glass package featured"><h3>Full Venue Sequence</h3><div class="package-price">RM 12,800</div><small>Up to 36 guests</small><ul><li><i class="fa-solid fa-check"></i>Exclusive venue access</li><li><i class="fa-solid fa-check"></i>Custom audiovisual identity</li><li><i class="fa-solid fa-check"></i>Bespoke 6-course menu</li><li><i class="fa-solid fa-check"></i>Event photography zone</li></ul><button class="btn btn-primary" data-page-link="contact">Request Proposal</button></article><article class="glass package"><h3>Brand Activation</h3><div class="package-price">Custom</div><small>Creative collaboration</small><ul><li><i class="fa-solid fa-check"></i>Product-integrated menu</li><li><i class="fa-solid fa-check"></i>Projection and lighting design</li><li><i class="fa-solid fa-check"></i>Media and creator hosting</li><li><i class="fa-solid fa-check"></i>Flexible production support</li></ul><button class="btn btn-ghost" data-page-link="contact">Start a Brief</button></article></div></div></section>
+
+    <section class="page" id="page-contact"><div class="shell page-hero" id="reserve"><div><span class="eyebrow">Page 07 · Contact & Reserve</span><h2 class="title-lg" style="margin-top:22px">Initialize your <span class="gradient-text">reservation.</span></h2><p class="lede">Build your preferred sequence and send the details directly to the reservation team through WhatsApp.</p></div><div class="page-code">07</div></div><div class="shell section" style="padding-top:25px"><div class="booking-grid"><form class="glass form-card" id="bookingForm"><div class="field-grid"><div class="field"><label for="guestName">Guest name</label><input id="guestName" type="text" placeholder="Your full name" required></div><div class="field"><label for="guestPhone">Contact number</label><input id="guestPhone" type="tel" placeholder="+60 ..." required></div><div class="field"><label for="sequence">Experience</label><select id="sequence"><option value="238">Signal — RM 238/pax</option><option value="398" selected>Transmission — RM 398/pax</option><option value="688">Singularity — RM 688/pax</option></select></div><div class="field"><label for="pax">Guests</label><select id="pax"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>8</option><option>10</option></select></div><div class="field"><label for="date">Preferred date</label><input id="date" type="date" required></div><div class="field"><label for="time">Preferred time</label><select id="time"><option>6:00 PM</option><option>7:00 PM</option><option selected>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option></select></div><div class="field full"><label for="occasion">Notes / occasion</label><textarea id="occasion" placeholder="Birthday, dietary requests, preferred seating..."></textarea></div></div><button class="btn btn-primary" style="width:100%" type="submit"><i class="fa-brands fa-whatsapp"></i> Send Reservation Request</button></form><aside class="glass summary-card"><div><span class="eyebrow">Live summary</span><div class="summary-rows" style="margin-top:28px"><div class="summary-row"><span>Selected sequence</span><strong id="sumSequence">Transmission</strong></div><div class="summary-row"><span>Guests</span><strong id="sumPax">2 guests</strong></div><div class="summary-row"><span>Estimated duration</span><strong id="sumDuration">90 minutes</strong></div><div class="summary-row"><span>Service charge</span><strong>10%</strong></div></div><div class="summary-total"><span>Estimated total</span><strong id="sumTotal">RM 875.60</strong></div><p class="notice"><i class="fa-solid fa-shield-halved"></i> This is an estimate only. Your booking is confirmed after the reservation team replies through WhatsApp.</p></div><div class="contact-list"><div class="contact-row"><i class="fa-solid fa-location-dot"></i><div><strong>NEOXIDE Kuala Lumpur</strong><span>Grid Sector 7, Cyber Tunnel Lane</span></div></div><div class="contact-row"><i class="fa-regular fa-clock"></i><div><strong>Opening Hours</strong><span>Tuesday–Sunday, 6:00 PM–1:00 AM</span></div></div></div></aside></div></div><div class="shell section" style="padding-top:10px"><div class="contact-grid"><div class="glass story-card"><span class="eyebrow">Direct channel</span><h3 style="font-size:1.6rem;margin:22px 0">Need a custom arrangement?</h3><p>For private events, brand collaborations or dietary planning, contact our team directly.</p><div class="contact-list"><a class="contact-row" href="tel:+60123456789" style="text-decoration:none"><i class="fa-solid fa-phone"></i><div><strong>+60 12-345 6789</strong><span>Reservation line</span></div></a><a class="contact-row" href="mailto:hello@neoxide.example" style="text-decoration:none"><i class="fa-regular fa-envelope"></i><div><strong>hello@neoxide.example</strong><span>Private events and collaborations</span></div></a></div></div><div class="glass map-frame"><iframe title="NEOXIDE location map" loading="lazy" src="https://www.google.com/maps?q=Kuala%20Lumpur&output=embed"></iframe></div></div></div></section>
+  </main>
+
+  <footer><div class="shell footer-inner"><div>© 2026 NEOXIDE. A cyber-organic hospitality concept.</div><div class="socials"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></div></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/60123456789" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <div class="lightbox" id="lightbox"><button class="lightbox-close" id="lightboxClose" aria-label="Close image"><i class="fa-solid fa-xmark"></i></button><img id="lightboxImage" alt="Expanded gallery image"></div>
+
+  <script>
+    const WHATSAPP_NUMBER='60123456789'; // Replace with the restaurant's WhatsApp number.
+    const pages=[...document.querySelectorAll('.page')];
+    const links=[...document.querySelectorAll('[data-page-link]')];
+    const menu=document.getElementById('mobileMenu');
+    function openPage(name,updateHash=true){
+      const target=document.getElementById('page-'+name) || document.getElementById('page-home');
+      pages.forEach(p=>p.classList.toggle('active',p===target));
+      document.querySelectorAll('.nav-link').forEach(l=>l.classList.toggle('active',l.dataset.pageLink===name));
+      if(updateHash) history.pushState(null,'','#'+name);
+      menu.classList.remove('open'); window.scrollTo({top:0,behavior:'smooth'}); setTimeout(runReveal,100);
+    }
+    links.forEach(link=>link.addEventListener('click',e=>{e.preventDefault();openPage(link.dataset.pageLink)}));
+    document.getElementById('mobileToggle').addEventListener('click',()=>menu.classList.toggle('open'));
+    window.addEventListener('popstate',()=>openPage(location.hash.replace('#','')||'home',false));
+    openPage(location.hash.replace('#','')||'home',false);
+
+    const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')}),{threshold:.12});
+    function runReveal(){document.querySelectorAll('.page.active .reveal').forEach(el=>revealObserver.observe(el))} runReveal();
+
+    const glow=document.getElementById('cursorGlow');
+    window.addEventListener('pointermove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+
+    document.querySelectorAll('.menu-tab').forEach(tab=>tab.addEventListener('click',()=>{
+      document.querySelectorAll('.menu-tab').forEach(t=>t.classList.remove('active'));tab.classList.add('active');
+      document.querySelectorAll('.menu-item').forEach(item=>item.style.display=(tab.dataset.filter==='all'||item.dataset.category===tab.dataset.filter)?'flex':'none');
+    }));
+
+    const lightbox=document.getElementById('lightbox'),lightboxImage=document.getElementById('lightboxImage');
+    document.querySelectorAll('.gallery-item img').forEach(img=>img.addEventListener('click',()=>{lightboxImage.src=img.src;lightboxImage.alt=img.alt;lightbox.classList.add('open')}));
+    function closeLightbox(){lightbox.classList.remove('open')} document.getElementById('lightboxClose').addEventListener('click',closeLightbox);lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+
+    const seq=document.getElementById('sequence'),pax=document.getElementById('pax');
+    const sequenceNames={'238':'Signal','398':'Transmission','688':'Singularity'},durations={'238':'60 minutes','398':'90 minutes','688':'120 minutes'};
+    function updateSummary(){const base=Number(seq.value),count=Number(pax.value),total=base*count*1.10;document.getElementById('sumSequence').textContent=sequenceNames[seq.value];document.getElementById('sumPax').textContent=count+' guest'+(count>1?'s':'');document.getElementById('sumDuration').textContent=durations[seq.value];document.getElementById('sumTotal').textContent='RM '+total.toLocaleString('en-MY',{minimumFractionDigits:2,maximumFractionDigits:2})}
+    seq.addEventListener('change',updateSummary);pax.addEventListener('change',updateSummary);updateSummary();
+    document.getElementById('date').min=new Date().toISOString().split('T')[0];
+    document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const data={name:document.getElementById('guestName').value,phone:document.getElementById('guestPhone').value,sequence:sequenceNames[seq.value],pax:pax.value,date:document.getElementById('date').value,time:document.getElementById('time').value,notes:document.getElementById('occasion').value||'None',total:document.getElementById('sumTotal').textContent};const text=`⚡ *NEOXIDE RESERVATION REQUEST*\n\n*Guest:* ${data.name}\n*Contact:* ${data.phone}\n*Experience:* ${data.sequence}\n*Guests:* ${data.pax}\n*Date:* ${data.date}\n*Time:* ${data.time}\n*Estimated Total:* ${data.total}\n*Notes:* ${data.notes}`;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,'_blank','noopener')});
+  </script>
 </body>
 </html>
